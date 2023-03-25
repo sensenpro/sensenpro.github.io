@@ -16,22 +16,24 @@
   <meta name="author" content="John Doe">
   <meta name="keywords" content="">
   
-    <meta name="description" content="title: 我的第一篇博客文章date: 2023-03-24 00:31:40tags:REST风格REST简介●REST (Representational State Transfer) ， 表现形式状态转换■传统风格资源描述形式    http:&#x2F;&#x2F;localhost&#x2F;user&#x2F; getById?id&#x3D;1    http:&#x2F;&#x2F;localhost&#x2F;user&#x2F; saveUser■">
+    <meta name="description" content="Spring事务简介    ●事务作用 :在数据层保障一系列的数据库操作同成功同失败    ●Spring事务作用 :在数据层或业务层保障一系列的数据库操作同成功同失败    案例::银行账户转账注意事项Spring注解式事务通常添加在业务层接口中而不会添加到业务层实现类中,降低耦合注解式事务可以添加到业务方法上表示当前方法开启事务,也可以添加到接口.上表示当前接口所有方法开启事务注意事项事务管理">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/2023/03/24/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/index.html">
+<meta property="og:url" content="http://example.com/2023/03/25/spring08/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="title: 我的第一篇博客文章date: 2023-03-24 00:31:40tags:REST风格REST简介●REST (Representational State Transfer) ， 表现形式状态转换■传统风格资源描述形式    http:&#x2F;&#x2F;localhost&#x2F;user&#x2F; getById?id&#x3D;1    http:&#x2F;&#x2F;localhost&#x2F;user&#x2F; saveUser■">
+<meta property="og:description" content="Spring事务简介    ●事务作用 :在数据层保障一系列的数据库操作同成功同失败    ●Spring事务作用 :在数据层或业务层保障一系列的数据库操作同成功同失败    案例::银行账户转账注意事项Spring注解式事务通常添加在业务层接口中而不会添加到业务层实现类中,降低耦合注解式事务可以添加到业务方法上表示当前方法开启事务,也可以添加到接口.上表示当前接口所有方法开启事务注意事项事务管理">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/2ac44b37a73646a3a0cbf20487d7ab19.png">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/08cfae0b07ce4675965fbe3728e3b02f.png">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/e8ea757469294615ba3e30f1d947eb3f.png">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/87f0e3c550404d9683292df490b67901.png">
-<meta property="article:published_time" content="2023-03-23T16:31:40.196Z">
-<meta property="article:modified_time" content="2023-03-24T07:06:14.734Z">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/8a3975fbdce047018fe539a900d167ab.png">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/54d88580ec374e4db4678cc7f82a4619.png">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/9509181c1e004bff8b3cbdbf5e6f6f57.png">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/d2c664acd808495580e2955af3f4706b.png">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/451ad090544b4014984ce7c50092d90a.png">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/6ae32d0c8c1c4d2c81e1066dff63d691.png">
+<meta property="article:published_time" content="2023-03-25T06:14:20.678Z">
+<meta property="article:modified_time" content="2023-03-24T22:13:16.000Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://img-blog.csdnimg.cn/2ac44b37a73646a3a0cbf20487d7ab19.png">
+<meta name="twitter:image" content="https://img-blog.csdnimg.cn/8a3975fbdce047018fe539a900d167ab.png">
   
   
   
@@ -212,8 +214,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2023-03-24 00:31" pubdate>
-          2023年3月24日 凌晨
+        <time datetime="2023-03-25 14:14" pubdate>
+          2023年3月25日 下午
         </time>
       </span>
     
@@ -224,7 +226,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          818 字
+          347 字
         
       </span>
     
@@ -235,7 +237,7 @@
         
         
         
-          7 分钟
+          3 分钟
         
       </span>
     
@@ -278,10 +280,9 @@
             
               <div class="markdown-body">
                 
-                <hr>
-<p>title: 我的第一篇博客文章<br>date: 2023-03-24 00:31:40<br>tags:<br><strong>REST风格</strong><br>REST简介<br>●REST (Representational State Transfer) ， 表现形式状态转换<br>■传统风格资源描述形式<br>    <a target="_blank" rel="noopener" href="http://localhost/user/">http://localhost/user/</a> getById?id&#x3D;1<br>    <a target="_blank" rel="noopener" href="http://localhost/user/">http://localhost/user/</a> saveUser<br>■REST风格描述形式<br>    <a target="_blank" rel="noopener" href="http://localhost/user/1">http://localhost/user/1</a><br>    <a target="_blank" rel="noopener" href="http://localhost/user">http://localhost/user</a><br>●优点:<br>    ■隐藏资源的访问行为， 无法通过地址得知对资源是何种操作<br>    ■书写简化</p>
-<p>●按照REST风格访问资源时使用行为动作区分对资源进行 了何种操作<br>    ■ <a target="_blank" rel="noopener" href="http://localhost/users">http://localhost/users</a>	查询全部用户信息	GET (查询)<br>    ■<a target="_blank" rel="noopener" href="http://localhost/users/1">http://localhost/users/1</a>	查询指定用户信息	GET (查询)<br>    ■<a target="_blank" rel="noopener" href="http://localhost/users">http://localhost/users</a>	添加用户信息	POST (新增&#x2F;保存)<br>    ■<a target="_blank" rel="noopener" href="http://localhost/users">http://localhost/users</a>	修改用户信息	PUT (修改&#x2F;更新)<br>    ■<a target="_blank" rel="noopener" href="http://localhost/users/1">http://localhost/users/1</a>	删除用户信息	DELETE (删除)<br>●根据REST风格对资源进行访问称为RESTful</p>
-<p>步骤:<br><img src="https://img-blog.csdnimg.cn/2ac44b37a73646a3a0cbf20487d7ab19.png" srcset="/img/loading.gif" lazyload alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/08cfae0b07ce4675965fbe3728e3b02f.png" srcset="/img/loading.gif" lazyload alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/e8ea757469294615ba3e30f1d947eb3f.png" srcset="/img/loading.gif" lazyload alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/87f0e3c550404d9683292df490b67901.png" srcset="/img/loading.gif" lazyload alt="在这里插入图片描述"><br>@RequestBody 		@RequestParam 		@PathVariable<br>●区别<br>■@RequestParam用于接收ur1地址传参或表单传参<br>■@RequestBody用于接收json数据<br>■@PathVariable用于接收路径参数， 使用{参数名称}描述路径参数<br>●应用<br>■后期开发中，发送请求参数超过1个时，以json格式为主, @RequestBody应用较广<br>■如果发送非j son格式数据,选用@RequestParam接收请求参数<br>■采用RESTfu1进行开发，当参数数量较少时，例如1个， 可以采用@PathVariable接收请求路径变量,通常用于传递id值</p>
+                <p>Spring事务简介<br>    ●事务作用 :在数据层保障一系列的数据库操作同成功同失败<br>    ●Spring事务作用 :在数据层或业务层保障一系列的数据库操作同成功同失败<br>    <img src="https://img-blog.csdnimg.cn/8a3975fbdce047018fe539a900d167ab.png" srcset="/img/loading.gif" lazyload alt="在这里插入图片描述"><br>案例::银行账户转账<br><img src="https://img-blog.csdnimg.cn/54d88580ec374e4db4678cc7f82a4619.png" srcset="/img/loading.gif" lazyload alt="在这里插入图片描述"><br>注意事项<br>Spring注解式事务通常添加在业务层接口中而不会添加到业务层实现类中,降低耦合<br>注解式事务可以添加到业务方法上表示当前方法开启事务,也可以添加到接口.上表示当前接口所有方法开启事务<br><img src="https://img-blog.csdnimg.cn/9509181c1e004bff8b3cbdbf5e6f6f57.png" srcset="/img/loading.gif" lazyload alt="在这里插入图片描述"><br>注意事项<br>事务管理器要根据实现技术进行选择<br>MyBatis框架使用的是JDBC事务<br><img src="https://img-blog.csdnimg.cn/d2c664acd808495580e2955af3f4706b.png" srcset="/img/loading.gif" lazyload alt="在这里插入图片描述"></p>
+<p>Spirng事务角色<br>■事务管理员 :发起事务方,在Spring中通常指代业务层开启事务的方法<br>■事务协调员 :加入事务方,在Spring中通常指代数据层方法,也可以是业务层方法</p>
+<p>案例:转账业务追加日志<br>事务相关配置<br><img src="https://img-blog.csdnimg.cn/451ad090544b4014984ce7c50092d90a.png" srcset="/img/loading.gif" lazyload alt="在这里插入图片描述"><br>事务传播行为: 事务协调员对事务管理员所携带事务的处理态度<br><img src="https://img-blog.csdnimg.cn/6ae32d0c8c1c4d2c81e1066dff63d691.png" srcset="/img/loading.gif" lazyload alt="在这里插入图片描述"></p>
 
                 
               </div>
@@ -300,7 +301,7 @@
   <div class="license-box my-3">
     <div class="license-title">
       <div></div>
-      <div>http://example.com/2023/03/24/我的第一篇博客文章/</div>
+      <div>http://example.com/2023/03/25/spring08/</div>
     </div>
     <div class="license-meta">
       
@@ -312,7 +313,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2023年3月24日</div>
+          <div>2023年3月25日</div>
         </div>
       
       
@@ -344,7 +345,7 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2023/03/25/SpringMVC04/" title="">
+                      <a href="/2023/03/25/spring07/" title="">
                         <i class="iconfont icon-arrowleft"></i>
                         <span class="hidden-mobile"></span>
                         <span class="visible-mobile">上一篇</span>
@@ -354,8 +355,8 @@
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2023/03/23/hello-world/" title="Hello World">
-                        <span class="hidden-mobile">Hello World</span>
+                      <a href="/2023/03/25/SpringMVC02/" title="">
+                        <span class="hidden-mobile"></span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>

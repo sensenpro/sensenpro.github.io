@@ -16,22 +16,17 @@
   <meta name="author" content="John Doe">
   <meta name="keywords" content="">
   
-    <meta name="description" content="title: 我的第一篇博客文章date: 2023-03-24 00:31:40tags:REST风格REST简介●REST (Representational State Transfer) ， 表现形式状态转换■传统风格资源描述形式    http:&#x2F;&#x2F;localhost&#x2F;user&#x2F; getById?id&#x3D;1    http:&#x2F;&#x2F;localhost&#x2F;user&#x2F; saveUser■">
+    <meta name="description" content="小程序简介1.运行环境不同网页运行在浏览器环境中小程序运行在微信环境中2. API不同由于运行环境的不同，所以小程序中无法调用DOM和BOM的API但是,小程序中可以调用微信环境提供的各种API例如:地理定位扫码支付3.开发模式不同网页的开发模式:浏览器+代码编辑器小程序有自己的一套标准开发模式:申请小程序开发账号安装小程序开发者工具创建和配置小程序项目 项目结构:①pages 用来存放所有小程序">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/2023/03/24/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/index.html">
+<meta property="og:url" content="http://example.com/2023/03/25/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8Fday01/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="title: 我的第一篇博客文章date: 2023-03-24 00:31:40tags:REST风格REST简介●REST (Representational State Transfer) ， 表现形式状态转换■传统风格资源描述形式    http:&#x2F;&#x2F;localhost&#x2F;user&#x2F; getById?id&#x3D;1    http:&#x2F;&#x2F;localhost&#x2F;user&#x2F; saveUser■">
+<meta property="og:description" content="小程序简介1.运行环境不同网页运行在浏览器环境中小程序运行在微信环境中2. API不同由于运行环境的不同，所以小程序中无法调用DOM和BOM的API但是,小程序中可以调用微信环境提供的各种API例如:地理定位扫码支付3.开发模式不同网页的开发模式:浏览器+代码编辑器小程序有自己的一套标准开发模式:申请小程序开发账号安装小程序开发者工具创建和配置小程序项目 项目结构:①pages 用来存放所有小程序">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/2ac44b37a73646a3a0cbf20487d7ab19.png">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/08cfae0b07ce4675965fbe3728e3b02f.png">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/e8ea757469294615ba3e30f1d947eb3f.png">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/87f0e3c550404d9683292df490b67901.png">
-<meta property="article:published_time" content="2023-03-23T16:31:40.196Z">
-<meta property="article:modified_time" content="2023-03-24T07:06:14.734Z">
+<meta property="article:published_time" content="2023-03-25T06:14:20.687Z">
+<meta property="article:modified_time" content="2023-03-24T22:13:18.000Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://img-blog.csdnimg.cn/2ac44b37a73646a3a0cbf20487d7ab19.png">
   
   
   
@@ -212,8 +207,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2023-03-24 00:31" pubdate>
-          2023年3月24日 凌晨
+        <time datetime="2023-03-25 14:14" pubdate>
+          2023年3月25日 下午
         </time>
       </span>
     
@@ -224,7 +219,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          818 字
+          2.5k 字
         
       </span>
     
@@ -235,7 +230,7 @@
         
         
         
-          7 分钟
+          21 分钟
         
       </span>
     
@@ -278,10 +273,28 @@
             
               <div class="markdown-body">
                 
-                <hr>
-<p>title: 我的第一篇博客文章<br>date: 2023-03-24 00:31:40<br>tags:<br><strong>REST风格</strong><br>REST简介<br>●REST (Representational State Transfer) ， 表现形式状态转换<br>■传统风格资源描述形式<br>    <a target="_blank" rel="noopener" href="http://localhost/user/">http://localhost/user/</a> getById?id&#x3D;1<br>    <a target="_blank" rel="noopener" href="http://localhost/user/">http://localhost/user/</a> saveUser<br>■REST风格描述形式<br>    <a target="_blank" rel="noopener" href="http://localhost/user/1">http://localhost/user/1</a><br>    <a target="_blank" rel="noopener" href="http://localhost/user">http://localhost/user</a><br>●优点:<br>    ■隐藏资源的访问行为， 无法通过地址得知对资源是何种操作<br>    ■书写简化</p>
-<p>●按照REST风格访问资源时使用行为动作区分对资源进行 了何种操作<br>    ■ <a target="_blank" rel="noopener" href="http://localhost/users">http://localhost/users</a>	查询全部用户信息	GET (查询)<br>    ■<a target="_blank" rel="noopener" href="http://localhost/users/1">http://localhost/users/1</a>	查询指定用户信息	GET (查询)<br>    ■<a target="_blank" rel="noopener" href="http://localhost/users">http://localhost/users</a>	添加用户信息	POST (新增&#x2F;保存)<br>    ■<a target="_blank" rel="noopener" href="http://localhost/users">http://localhost/users</a>	修改用户信息	PUT (修改&#x2F;更新)<br>    ■<a target="_blank" rel="noopener" href="http://localhost/users/1">http://localhost/users/1</a>	删除用户信息	DELETE (删除)<br>●根据REST风格对资源进行访问称为RESTful</p>
-<p>步骤:<br><img src="https://img-blog.csdnimg.cn/2ac44b37a73646a3a0cbf20487d7ab19.png" srcset="/img/loading.gif" lazyload alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/08cfae0b07ce4675965fbe3728e3b02f.png" srcset="/img/loading.gif" lazyload alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/e8ea757469294615ba3e30f1d947eb3f.png" srcset="/img/loading.gif" lazyload alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/87f0e3c550404d9683292df490b67901.png" srcset="/img/loading.gif" lazyload alt="在这里插入图片描述"><br>@RequestBody 		@RequestParam 		@PathVariable<br>●区别<br>■@RequestParam用于接收ur1地址传参或表单传参<br>■@RequestBody用于接收json数据<br>■@PathVariable用于接收路径参数， 使用{参数名称}描述路径参数<br>●应用<br>■后期开发中，发送请求参数超过1个时，以json格式为主, @RequestBody应用较广<br>■如果发送非j son格式数据,选用@RequestParam接收请求参数<br>■采用RESTfu1进行开发，当参数数量较少时，例如1个， 可以采用@PathVariable接收请求路径变量,通常用于传递id值</p>
+                <p>小程序简介<br>1.运行环境不同<br>网页运行在浏览器环境中<br>小程序运行在微信环境中<br>2. API不同<br>由于运行环境的不同，所以小程序中无法调用DOM和BOM的API<br>但是,小程序中可以调用微信环境提供的各种API<br>例如:地理定位<br>扫码<br>支付<br>3.开发模式不同<br>网页的开发模式:浏览器+代码编辑器<br>小程序有自己的一套标准开发模式:<br>申请小程序开发账号<br>安装小程序开发者工具<br>创建和配置小程序项目</p>
+<p>项目结构:<br>①pages 用来存放所有小程序的页面	(重点)<br>②utils 用来存放工具性质的模块(例如:格式化时间的自定义模块)<br>③app.js 小程序项目的入口文件	(重点)<br>④app.json 小程序项目的全局配置文件 (重点)<br>⑤app.wxss 小程序项目的全局样式文件<br>⑥project.config.json 项目的配置文件<br>⑦sitemap.json 用来配置小程序及其页面是否允许被微信索引</p>
+<p>page目录中<br>①js 文件(页面的脚本文件,存放页面的数据、事件处理函数等)<br>②.json 文件(当前页面的配置文件，配置窗口的外观、表现等)<br>③.wxml 文件(页面的模板结构文件)<br>④.WXSs 文件(当前页面的样式0表文件)<br>这四个组成一个小程序的页面</p>
+<p>app.json是当前小程序的全局配置，包括了小程序的所有页面路径、窗口外观、界面表现、底部tab等。<br>简单了解下这4个配置项的作用:<br>①pages:用来记录当前小程序所有页面的路径<br>②window: 全局定义小程序所有页面的背景色、文字颜色等<br>③style: 全局定义小程序组件所使用的样式版本<br>④sitemapLocation: 用来指明sitemap.json的位置</p>
+<p>project.config.json是项目配置文件，用来记录我们对小程序开发工具所做的个性化配置。<br>●setting 中保存了编译相关的配置<br>●projectname 中保存的是项目名称<br>●appid 中保存的是小程序的账号ID </p>
+<p>微信现已开放小程序内搜索，效果类似于PC网页的SEO。sitemap.json文件用来配置小程序页面是否允许微信索引。</p>
+<p>注意: sitemap的索引提示是默认开启的，如需要关闭sitemap的索引提示，可在小程序项目配置文件 project.config.json 的setting中配置字段checkSiteMap为false</p>
+<p>小程序中的每一个页面，可以使用json文件来对本页面的窗口外观进行配置，页面中的配置项会覆盖app.json的window中相同的配置项</p>
+<p>新建小程序页面，只需要在app.json -&gt; pages中新增页面的存放路径，小程序开发者工具即可帮我们自动创建对应的页面文件</p>
+<p>修改项目首页，只需要调整app.json -&gt; pages数组中页面路径的前后顺序，即可修改项目的首页。小程序会把排在第一位的页面，当作项目首页进行渲染</p>
+<p>WXML (WeiXin Markup Language)是小程序框架设计的一套标签语言，用来构建小程序页面的结构，其作用类似于网页开发中的HTML<br>WXML和HTML的区别<br>①标签名称不同<br>HTML (div, span, img, a)<br>WXML (view, text, image, navigator)<br>②属性节点不同<br><a href="#">超链接</a><br><navigator url="/pages/home/home"></navigato><br>③提供了类似于Vue中的模板语法<br>数据绑定<br>列表渲染<br>条件渲染</p>
+<p>WXSS (WeiXin Style Sheets)是一套样式语言 ，用于描述WXML的组件样式，类似于网页开发中的CSS。<br>WXSS和CSS的区别<br>①新增了rpx尺寸单位<br>CSS 中需要手动进行像素单位换算,例如rem<br>WXSS 在底层支持新的尺寸单位rpx,在不同大小的屏幕上小程序会自动进行换算<br>②提供了全局的样式和局部样式<br>项目根目录中的app.Wxss会作用于所有小程序页面<br>局部页面的.wXSs样式仅对当前页面生效<br>③WXSS 仅支持部分CSS选择器<br>class 和#id<br>element<br>并集选择器、后代选择器<br>after 和::before等伪类选择器</p>
+<p>小程序中的.js文件<br>一个项目仅仅提供界面展示是不够的，在小程序中，我们通过.js 文件来处理用户的操作。例如:响应用户的点击、获取用户的位置等等。<br>小程序中js文件的分类<br>小程序中的JS文件分为三大类,分别是:<br>①app.js<br>●是整个小程序项目 的入口文件,通过调用App()函数来启动整个小程序<br>②页面的.js 文件<br>●是页面的入口文件, 通过调用Page()函数来创建并运行页面<br>③普通的js文件<br>●是普通的功能模块文件， 用来封装公共的函数或属性供页面使用</p>
+<p>宿主环境(host environment)指的是程序运行所必须的依赖环境。例如:<br>Android系统和ios系统是两个不同的宿主环境。安卓版的微信App是不能在ios环境下运行的，所以Android是安卓软件的宿主环境,脱离了宿主环境的软件是没有任何意义的<br>手机微信是小程序的宿主环境</p>
+<p>程序宿主环境包含的内容（微信为小程序提供的环境）<br>通信模型<br>运行机制<br>组件<br>API</p>
+<p>通信的主体<br>小程序中通信的主体是渲染层和逻辑层，其中:<br>①WXML 模板和WXSS样式工作在渲染层.<br>②JS脚本工作在逻辑层</p>
+<p>小程序的通信模型<br>小程序中的通信模型分为两部分:</p>
+<p>渲染层和逻辑层之间的通信<br>由微信客户端进行转发<br>逻辑层和第三方服务器之间的通信<br>由微信客户端进行转发</p>
+<p>小程序启动的过程<br>①把小程序的代码包下载到本地<br>②解析app.json全局配置文件<br>③执行app.js小程序入口文件，调用App()创建小程序实例<br>④渲染小程序首页<br>⑤小程序启动完成</p>
+<p>页面渲染的过程<br>①加载解析页面的.json 配置文件<br>②加载页面的.wxml模板和.wXSS样式<br>③执行页面的.js 文件，调用Page()创建页面实例<br>④页面渲染完成</p>
+<p>小程序中的组件也是由宿主环境提供的，开发者可以基于组件快速搭建出漂亮的页面结构。官方把小程序的组件分为了9大类，分别是:<br>①视图容器<br>②基础内容<br>③表单组件<br>④导航组件<br>⑤媒体组件<br>⑥map地图组件<br>⑦canvas 画布组件<br>⑧开放能力<br>⑨无障碍访问</p>
+<p>2.常用的视图容器类组件<br>①view<br>普通视图区域<br>类似于 HTML中的div,是一个块级元素<br>常用来实现页面的布局效果<br>②scroll-view<br>可滚动的视图区域<br>常用来实现滚动列表效果<br>③swiper 和 swiper-item<br>轮播图容器组件和轮播图item组件</p>
 
                 
               </div>
@@ -300,7 +313,7 @@
   <div class="license-box my-3">
     <div class="license-title">
       <div></div>
-      <div>http://example.com/2023/03/24/我的第一篇博客文章/</div>
+      <div>http://example.com/2023/03/25/微信小程序day01/</div>
     </div>
     <div class="license-meta">
       
@@ -312,7 +325,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2023年3月24日</div>
+          <div>2023年3月25日</div>
         </div>
       
       
@@ -344,7 +357,7 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2023/03/25/SpringMVC04/" title="">
+                      <a href="/2023/03/25/%E9%94%99%E8%AF%AF%E5%90%88%E9%9B%86/" title="">
                         <i class="iconfont icon-arrowleft"></i>
                         <span class="hidden-mobile"></span>
                         <span class="visible-mobile">上一篇</span>
@@ -354,8 +367,8 @@
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2023/03/23/hello-world/" title="Hello World">
-                        <span class="hidden-mobile">Hello World</span>
+                      <a href="/2023/03/25/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%AC%94%E8%AE%B0/" title="">
+                        <span class="hidden-mobile"></span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>

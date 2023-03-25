@@ -16,22 +16,25 @@
   <meta name="author" content="John Doe">
   <meta name="keywords" content="">
   
-    <meta name="description" content="title: 我的第一篇博客文章date: 2023-03-24 00:31:40tags:REST风格REST简介●REST (Representational State Transfer) ， 表现形式状态转换■传统风格资源描述形式    http:&#x2F;&#x2F;localhost&#x2F;user&#x2F; getById?id&#x3D;1    http:&#x2F;&#x2F;localhost&#x2F;user&#x2F; saveUser■">
+    <meta name="description" content="注解开发注解开发定义bean在你要使用的bean 上配置@Component@Component(““)	可指定名称在applicationContext.xml(核心配置文件种通过组件加载bean)这三个注解和@Component功能相同 只是为了开发便于区分而使用 纯注解开发●Spring3.0开启了纯注解开发模式,使用Java类替代配置文件,开启了Spring快速开发赛道●Java类代替Sp">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/2023/03/24/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/index.html">
+<meta property="og:url" content="http://example.com/2023/03/25/spring%E5%AD%A6%E4%B9%A003/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="title: 我的第一篇博客文章date: 2023-03-24 00:31:40tags:REST风格REST简介●REST (Representational State Transfer) ， 表现形式状态转换■传统风格资源描述形式    http:&#x2F;&#x2F;localhost&#x2F;user&#x2F; getById?id&#x3D;1    http:&#x2F;&#x2F;localhost&#x2F;user&#x2F; saveUser■">
+<meta property="og:description" content="注解开发注解开发定义bean在你要使用的bean 上配置@Component@Component(““)	可指定名称在applicationContext.xml(核心配置文件种通过组件加载bean)这三个注解和@Component功能相同 只是为了开发便于区分而使用 纯注解开发●Spring3.0开启了纯注解开发模式,使用Java类替代配置文件,开启了Spring快速开发赛道●Java类代替Sp">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/2ac44b37a73646a3a0cbf20487d7ab19.png">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/08cfae0b07ce4675965fbe3728e3b02f.png">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/e8ea757469294615ba3e30f1d947eb3f.png">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/87f0e3c550404d9683292df490b67901.png">
-<meta property="article:published_time" content="2023-03-23T16:31:40.196Z">
-<meta property="article:modified_time" content="2023-03-24T07:06:14.734Z">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/98781afe4c194b7486c5cfff06b6565d.png">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/b8671754c6de4ba6a31aedee54f7149e.png">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/2a78d20b4ab548fd8311d5d9cdba7c0a.png">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/d99b7c20a9524fde96c060b54ede82fe.png">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/8232bf86bbf54a798adc221064fee74f.png">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/08cce6d5ab264dc0ab0b1dbc917459f5.png">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/68ca068be2474b09b5ac7596a168e53a.png">
+<meta property="article:published_time" content="2023-03-25T06:14:20.680Z">
+<meta property="article:modified_time" content="2023-03-24T22:13:16.000Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://img-blog.csdnimg.cn/2ac44b37a73646a3a0cbf20487d7ab19.png">
+<meta name="twitter:image" content="https://img-blog.csdnimg.cn/98781afe4c194b7486c5cfff06b6565d.png">
   
   
   
@@ -212,8 +215,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2023-03-24 00:31" pubdate>
-          2023年3月24日 凌晨
+        <time datetime="2023-03-25 14:14" pubdate>
+          2023年3月25日 下午
         </time>
       </span>
     
@@ -224,7 +227,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          818 字
+          2.2k 字
         
       </span>
     
@@ -235,7 +238,7 @@
         
         
         
-          7 分钟
+          19 分钟
         
       </span>
     
@@ -278,10 +281,25 @@
             
               <div class="markdown-body">
                 
-                <hr>
-<p>title: 我的第一篇博客文章<br>date: 2023-03-24 00:31:40<br>tags:<br><strong>REST风格</strong><br>REST简介<br>●REST (Representational State Transfer) ， 表现形式状态转换<br>■传统风格资源描述形式<br>    <a target="_blank" rel="noopener" href="http://localhost/user/">http://localhost/user/</a> getById?id&#x3D;1<br>    <a target="_blank" rel="noopener" href="http://localhost/user/">http://localhost/user/</a> saveUser<br>■REST风格描述形式<br>    <a target="_blank" rel="noopener" href="http://localhost/user/1">http://localhost/user/1</a><br>    <a target="_blank" rel="noopener" href="http://localhost/user">http://localhost/user</a><br>●优点:<br>    ■隐藏资源的访问行为， 无法通过地址得知对资源是何种操作<br>    ■书写简化</p>
-<p>●按照REST风格访问资源时使用行为动作区分对资源进行 了何种操作<br>    ■ <a target="_blank" rel="noopener" href="http://localhost/users">http://localhost/users</a>	查询全部用户信息	GET (查询)<br>    ■<a target="_blank" rel="noopener" href="http://localhost/users/1">http://localhost/users/1</a>	查询指定用户信息	GET (查询)<br>    ■<a target="_blank" rel="noopener" href="http://localhost/users">http://localhost/users</a>	添加用户信息	POST (新增&#x2F;保存)<br>    ■<a target="_blank" rel="noopener" href="http://localhost/users">http://localhost/users</a>	修改用户信息	PUT (修改&#x2F;更新)<br>    ■<a target="_blank" rel="noopener" href="http://localhost/users/1">http://localhost/users/1</a>	删除用户信息	DELETE (删除)<br>●根据REST风格对资源进行访问称为RESTful</p>
-<p>步骤:<br><img src="https://img-blog.csdnimg.cn/2ac44b37a73646a3a0cbf20487d7ab19.png" srcset="/img/loading.gif" lazyload alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/08cfae0b07ce4675965fbe3728e3b02f.png" srcset="/img/loading.gif" lazyload alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/e8ea757469294615ba3e30f1d947eb3f.png" srcset="/img/loading.gif" lazyload alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/87f0e3c550404d9683292df490b67901.png" srcset="/img/loading.gif" lazyload alt="在这里插入图片描述"><br>@RequestBody 		@RequestParam 		@PathVariable<br>●区别<br>■@RequestParam用于接收ur1地址传参或表单传参<br>■@RequestBody用于接收json数据<br>■@PathVariable用于接收路径参数， 使用{参数名称}描述路径参数<br>●应用<br>■后期开发中，发送请求参数超过1个时，以json格式为主, @RequestBody应用较广<br>■如果发送非j son格式数据,选用@RequestParam接收请求参数<br>■采用RESTfu1进行开发，当参数数量较少时，例如1个， 可以采用@PathVariable接收请求路径变量,通常用于传递id值</p>
+                <p>注解开发<br>注解开发定义bean<br>在你要使用的bean 上配置@Component<br>@Component(““)	可指定名称<br><img src="https://img-blog.csdnimg.cn/98781afe4c194b7486c5cfff06b6565d.png" srcset="/img/loading.gif" lazyload alt="在这里插入图片描述">在applicationContext.xml(核心配置文件种通过组件加载bean)<br><img src="https://img-blog.csdnimg.cn/b8671754c6de4ba6a31aedee54f7149e.png" srcset="/img/loading.gif" lazyload alt="在这里插入图片描述"><img src="https://img-blog.csdnimg.cn/2a78d20b4ab548fd8311d5d9cdba7c0a.png" srcset="/img/loading.gif" lazyload alt="在这里插入图片描述"><br>这三个注解和@Component功能相同 只是为了开发便于区分而使用</p>
+<p>纯注解开发<br>●Spring3.0开启了纯注解开发模式,使用Java类替代配置文件,开启了Spring快速开发赛道<br>●Java类代替Spring核心配置文件,<br>●@Configuration注解用于设定当前类为配置类<br>●@ComponentScan注解用于设定扫 描路径,此注解只能添加一次,多个数据请用数组格式<br>@ComponentScan({ com . itheima. service” , “com. itheima.dao”})<br><img src="https://img-blog.csdnimg.cn/d99b7c20a9524fde96c060b54ede82fe.png" srcset="/img/loading.gif" lazyload alt="在这里插入图片描述">bean作用范围<br>bean生命周期</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-meta">@Repository</span><br><span class="hljs-meta">@Scope(&quot;singleton&quot;)</span><br><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">BookDaoImpl</span> <span class="hljs-keyword">implements</span> <span class="hljs-title class_">BookDao</span> &#123;<br>    <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">save</span><span class="hljs-params">()</span>&#123;<br>        System.out.println(<span class="hljs-string">&quot;book dao save ...&quot;</span>);<br>    &#125;<br>    <span class="hljs-meta">@PostConstruct</span><br>    <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">init</span><span class="hljs-params">()</span>&#123;<br>        System.out.println(<span class="hljs-string">&quot;init&quot;</span>);<br>    &#125;<br>    <span class="hljs-meta">@PreDestroy</span><br>    <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">destroy</span><span class="hljs-params">()</span>&#123;<br>        System.out.println(<span class="hljs-string">&quot;destroy&quot;</span>);<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
+
+<p>依赖注入<br>自动装配<br>●使用@Autowired注解开启自动装配模式(按类型)</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-meta">@Service</span><br><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">BookServiceImpl</span> <span class="hljs-keyword">implements</span> <span class="hljs-title class_">BookService</span> &#123;<br>    <span class="hljs-meta">@Autowired</span><br>    <span class="hljs-comment">//@Qualifier(&quot;bookDao&quot;)多个时 可以用这个说明注入哪个 但需配合 @Autowired</span><br>    <span class="hljs-keyword">private</span> BookDao bookDao;<br><br><span class="hljs-comment">//    public void setBookDao(BookDao bookDao) &#123;</span><br><span class="hljs-comment">//        this.bookDao = bookDao;</span><br><span class="hljs-comment">//    &#125;</span><br><span class="hljs-comment">//	在使用@Autowired后set注入可以不用写</span><br>    <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">save</span><span class="hljs-params">()</span>&#123;<br>        System.out.println(<span class="hljs-string">&quot;6666&quot;</span>);<br>        bookDao.save();<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
+<p>●注意:自动装配基于反射设计创建对象并暴力反射对应属性为私有属性初始化数据, 因此无需提供setter方法<br>●注意:自动装配建议使用无参构造方法创建对象(默认) , 如果不提供对应构造方法,请提供唯一的构造方法</p>
+<p>●使用@Value实现简单类型注入</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-meta">@Value(&quot;hutao&quot;)</span><br>   <span class="hljs-keyword">private</span> String name;<br>   <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">save</span><span class="hljs-params">()</span>&#123;<br>       System.out.println(<span class="hljs-string">&quot;book dao save ... &quot;</span>+name);<br>   &#125;<br></code></pre></td></tr></table></figure>
+
+<p>第三方bean管理<br>使用@Bean配置第三方Bean</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-meta">@Configuration</span><br><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">SpringConfig</span> &#123;<br><span class="hljs-comment">//    1.定义方法获得需要管理的对象</span><br><span class="hljs-comment">//    2.添加@Bean 表示当前方法的返回值是个bean</span><br>    <span class="hljs-meta">@Bean</span><br>        <span class="hljs-keyword">public</span> DataSource <span class="hljs-title function_">dataSource</span><span class="hljs-params">()</span>&#123;<br>        <span class="hljs-type">DruidDataSource</span> <span class="hljs-variable">dataSource</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">DruidDataSource</span>();<br>        dataSource.setDriverClassName(<span class="hljs-string">&quot;com.mysql.cj.jdbc.Driver&quot;</span>);<br>        dataSource.setUrl(<span class="hljs-string">&quot;jdbc:mysql://locahost:3306/db1&quot;</span>);<br>        dataSource.setUsername(<span class="hljs-string">&quot;hutao&quot;</span>);<br>        dataSource.setPassword(<span class="hljs-string">&quot;20020509+&quot;</span>);<br>        <span class="hljs-keyword">return</span> dataSource;<br>        &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
+<p>将独立的配置类加入核心配置<br>方式一:导入式</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">JdbcConfig</span> &#123;<br>    <span class="hljs-meta">@Bean</span><br>    <span class="hljs-keyword">public</span> DataSource <span class="hljs-title function_">dataSource</span><span class="hljs-params">()</span>&#123;<br>        <span class="hljs-type">DruidDataSource</span> <span class="hljs-variable">dataSource</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">DruidDataSource</span>();<br>       <span class="hljs-comment">//配置..</span><br>        <span class="hljs-keyword">return</span> dataSource;<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
+<p>使用@Import注解手动加入配置类到核心配置，此注解value为数组</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-meta">@Configuration</span><br><span class="hljs-meta">@Import(&#123;JdbcConfig.class&#125;)</span><br><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">SpringConfig</span> &#123;&#125;<br></code></pre></td></tr></table></figure>
+<p>方式二:扫描式<br>使用@ComponentScan</p>
+<p>第三方bean依赖注入<br>简单类型依赖注入<br>即直接使用成员变量代替<br><img src="https://img-blog.csdnimg.cn/8232bf86bbf54a798adc221064fee74f.png" srcset="/img/loading.gif" lazyload alt="在这里插入图片描述"><br>引用类型依赖注入<br><img src="https://img-blog.csdnimg.cn/08cce6d5ab264dc0ab0b1dbc917459f5.png" srcset="/img/loading.gif" lazyload alt="在这里插入图片描述">引用类型注入只需要为bean定义方法设置形参即可，容器会根据类型自动装配对象</p>
+<p>注解开发总结<br>XML配置比对注解配置<br><img src="https://img-blog.csdnimg.cn/68ca068be2474b09b5ac7596a168e53a.png" srcset="/img/loading.gif" lazyload alt="在这里插入图片描述"></p>
 
                 
               </div>
@@ -300,7 +318,7 @@
   <div class="license-box my-3">
     <div class="license-title">
       <div></div>
-      <div>http://example.com/2023/03/24/我的第一篇博客文章/</div>
+      <div>http://example.com/2023/03/25/spring学习03/</div>
     </div>
     <div class="license-meta">
       
@@ -312,7 +330,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2023年3月24日</div>
+          <div>2023年3月25日</div>
         </div>
       
       
@@ -344,7 +362,7 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2023/03/25/SpringMVC04/" title="">
+                      <a href="/2023/03/25/spring%E5%AD%A6%E4%B9%A004/" title="">
                         <i class="iconfont icon-arrowleft"></i>
                         <span class="hidden-mobile"></span>
                         <span class="visible-mobile">上一篇</span>
@@ -354,8 +372,8 @@
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2023/03/23/hello-world/" title="Hello World">
-                        <span class="hidden-mobile">Hello World</span>
+                      <a href="/2023/03/25/Spring%E5%AD%A6%E4%B9%A006/" title="">
+                        <span class="hidden-mobile"></span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>

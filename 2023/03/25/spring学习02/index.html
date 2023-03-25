@@ -16,22 +16,22 @@
   <meta name="author" content="John Doe">
   <meta name="keywords" content="">
   
-    <meta name="description" content="title: 我的第一篇博客文章date: 2023-03-24 00:31:40tags:REST风格REST简介●REST (Representational State Transfer) ， 表现形式状态转换■传统风格资源描述形式    http:&#x2F;&#x2F;localhost&#x2F;user&#x2F; getById?id&#x3D;1    http:&#x2F;&#x2F;localhost&#x2F;user&#x2F; saveUser■">
+    <meta name="description" content="依赖自动装配●IoC容器根据bean所依赖的资源在容器中自动查找并注入到bean中的过程称为自动装配●自动装配方式■按类型(常用)■按名称■按构造方法■不启用自动装配 ●配置中使用bean标签 autowire属性设置自动装配的类型 12&lt;bean id&#x3D; ”bookDao&quot; class&#x3D; &quot; com. itheima . dao. impl. BookDaoImpl&amp;q">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/2023/03/24/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/index.html">
+<meta property="og:url" content="http://example.com/2023/03/25/spring%E5%AD%A6%E4%B9%A002/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="title: 我的第一篇博客文章date: 2023-03-24 00:31:40tags:REST风格REST简介●REST (Representational State Transfer) ， 表现形式状态转换■传统风格资源描述形式    http:&#x2F;&#x2F;localhost&#x2F;user&#x2F; getById?id&#x3D;1    http:&#x2F;&#x2F;localhost&#x2F;user&#x2F; saveUser■">
+<meta property="og:description" content="依赖自动装配●IoC容器根据bean所依赖的资源在容器中自动查找并注入到bean中的过程称为自动装配●自动装配方式■按类型(常用)■按名称■按构造方法■不启用自动装配 ●配置中使用bean标签 autowire属性设置自动装配的类型 12&lt;bean id&#x3D; ”bookDao&quot; class&#x3D; &quot; com. itheima . dao. impl. BookDaoImpl&amp;q">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/2ac44b37a73646a3a0cbf20487d7ab19.png">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/08cfae0b07ce4675965fbe3728e3b02f.png">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/e8ea757469294615ba3e30f1d947eb3f.png">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/87f0e3c550404d9683292df490b67901.png">
-<meta property="article:published_time" content="2023-03-23T16:31:40.196Z">
-<meta property="article:modified_time" content="2023-03-24T07:06:14.734Z">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/ad49915a90dd45a980f958670dedf4fe.png">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/969bc284d38e493c8fcf3758dd0c9bc6.png">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/5634e1ab3e6445ce90c5e14c148ec5ce.png">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/2d25844cff4a44b1ac5ef826e6444764.png">
+<meta property="article:published_time" content="2023-03-25T06:14:20.681Z">
+<meta property="article:modified_time" content="2023-03-24T22:13:16.000Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://img-blog.csdnimg.cn/2ac44b37a73646a3a0cbf20487d7ab19.png">
+<meta name="twitter:image" content="https://img-blog.csdnimg.cn/ad49915a90dd45a980f958670dedf4fe.png">
   
   
   
@@ -212,8 +212,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2023-03-24 00:31" pubdate>
-          2023年3月24日 凌晨
+        <time datetime="2023-03-25 14:14" pubdate>
+          2023年3月25日 下午
         </time>
       </span>
     
@@ -224,7 +224,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          818 字
+          2.8k 字
         
       </span>
     
@@ -235,7 +235,7 @@
         
         
         
-          7 分钟
+          24 分钟
         
       </span>
     
@@ -278,10 +278,28 @@
             
               <div class="markdown-body">
                 
-                <hr>
-<p>title: 我的第一篇博客文章<br>date: 2023-03-24 00:31:40<br>tags:<br><strong>REST风格</strong><br>REST简介<br>●REST (Representational State Transfer) ， 表现形式状态转换<br>■传统风格资源描述形式<br>    <a target="_blank" rel="noopener" href="http://localhost/user/">http://localhost/user/</a> getById?id&#x3D;1<br>    <a target="_blank" rel="noopener" href="http://localhost/user/">http://localhost/user/</a> saveUser<br>■REST风格描述形式<br>    <a target="_blank" rel="noopener" href="http://localhost/user/1">http://localhost/user/1</a><br>    <a target="_blank" rel="noopener" href="http://localhost/user">http://localhost/user</a><br>●优点:<br>    ■隐藏资源的访问行为， 无法通过地址得知对资源是何种操作<br>    ■书写简化</p>
-<p>●按照REST风格访问资源时使用行为动作区分对资源进行 了何种操作<br>    ■ <a target="_blank" rel="noopener" href="http://localhost/users">http://localhost/users</a>	查询全部用户信息	GET (查询)<br>    ■<a target="_blank" rel="noopener" href="http://localhost/users/1">http://localhost/users/1</a>	查询指定用户信息	GET (查询)<br>    ■<a target="_blank" rel="noopener" href="http://localhost/users">http://localhost/users</a>	添加用户信息	POST (新增&#x2F;保存)<br>    ■<a target="_blank" rel="noopener" href="http://localhost/users">http://localhost/users</a>	修改用户信息	PUT (修改&#x2F;更新)<br>    ■<a target="_blank" rel="noopener" href="http://localhost/users/1">http://localhost/users/1</a>	删除用户信息	DELETE (删除)<br>●根据REST风格对资源进行访问称为RESTful</p>
-<p>步骤:<br><img src="https://img-blog.csdnimg.cn/2ac44b37a73646a3a0cbf20487d7ab19.png" srcset="/img/loading.gif" lazyload alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/08cfae0b07ce4675965fbe3728e3b02f.png" srcset="/img/loading.gif" lazyload alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/e8ea757469294615ba3e30f1d947eb3f.png" srcset="/img/loading.gif" lazyload alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/87f0e3c550404d9683292df490b67901.png" srcset="/img/loading.gif" lazyload alt="在这里插入图片描述"><br>@RequestBody 		@RequestParam 		@PathVariable<br>●区别<br>■@RequestParam用于接收ur1地址传参或表单传参<br>■@RequestBody用于接收json数据<br>■@PathVariable用于接收路径参数， 使用{参数名称}描述路径参数<br>●应用<br>■后期开发中，发送请求参数超过1个时，以json格式为主, @RequestBody应用较广<br>■如果发送非j son格式数据,选用@RequestParam接收请求参数<br>■采用RESTfu1进行开发，当参数数量较少时，例如1个， 可以采用@PathVariable接收请求路径变量,通常用于传递id值</p>
+                <p><strong>依赖自动装配</strong><br>●IoC容器根据bean所依赖的资源在容器中自动查找并注入到bean中的过程称为自动装配<br>●自动装配方式<br>■按类型(常用)<br>■按名称<br>■按构造方法<br>■不启用自动装配</p>
+<p>●配置中使用bean标签 autowire属性设置自动装配的类型</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs java">&lt;bean id= ”bookDao<span class="hljs-string">&quot; class= &quot;</span> com. itheima . dao. impl. BookDaoImpl<span class="hljs-string">&quot; /&gt;</span><br><span class="hljs-string">&lt;bean id=&quot;</span> bookService<span class="hljs-string">&quot; class=&quot;</span> com.itheima.service.impl.BookServiceImpl<span class="hljs-string">&quot; autowire=&quot;</span>byType<span class="hljs-string">&quot;/&gt;</span><br></code></pre></td></tr></table></figure>
+<p>●自动装配用于引用类型依赖注入,不能对简单类型进行操作<br>●使用按类型装配时( byType )必须保障容器中相同类型的bean唯一, 推荐使用<br>●使用按名称装配时( byName )必须保障容器中具有指定名称的bean ,因变量名与配置耦合,不推荐使用<br>●自动装配优先级低于setter注入与构造器注入,同时出现时自动装配配置失效</p>
+<p><strong>案例:数据源对象管理<br>第三方资源配置管理，管理连接池对象</strong></p>
+<p><strong>c3p0</strong></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-comment">//●导入druid坐标</span><br><span class="hljs-comment">//DruidDataSource</span><br>&lt;dependency&gt;<br>&lt;groupId&gt;com.alibaba&lt;/ groupId&gt;<br>&lt;artifactId&gt;druid&lt;/artifactId&gt;<br>&lt;version&gt;<span class="hljs-number">1.1</span><span class="hljs-number">.16</span>&lt;/version&gt;<br>&lt;/dependency&gt;<br><span class="hljs-comment">//配置数据源对象作为spring管理的bean</span><br><span class="hljs-comment">//ComboPooledDataSource</span><br>&lt;bean id=<span class="hljs-string">&quot; dataSource&quot;</span> class=<span class="hljs-string">&quot; com.alibaba.druid.pool.DruidDataSource&quot;</span> &gt;<br>&lt;property name= <span class="hljs-string">&quot; driverClassName&quot;</span> value= ”com.mysq1.jdbc.Driver<span class="hljs-string">&quot;/&gt;</span><br><span class="hljs-string">//com.mysq1.jdbc.Driver</span><br><span class="hljs-string">//mysql8以上为&quot;</span>com.mysql.cj.jdbc.Driver<span class="hljs-string">&quot;</span><br><span class="hljs-string">&lt;property name=&quot;</span>url<span class="hljs-string">&quot; value= &quot;</span>jdbc :mysql :<span class="hljs-comment">//127.0.0.1:3306/spring_ _db&quot;/&gt;</span><br>&lt;property name=<span class="hljs-string">&quot;username&quot;</span> value=<span class="hljs-string">&quot;root&#x27;&quot;</span>/&gt;<br>&lt;property name=<span class="hljs-string">&quot;password&quot;</span> value=<span class="hljs-string">&quot;root&quot;</span>/&gt;<br>&lt;/bean&gt;<br></code></pre></td></tr></table></figure>
+
+<p><strong>加载properties文件</strong></p>
+<p>加载properties配置信息<br>开命名空间<br>1.开启context命名空间<br><img src="https://img-blog.csdnimg.cn/ad49915a90dd45a980f958670dedf4fe.png" srcset="/img/loading.gif" lazyload alt="在这里插入图片描述"><br>2.使用context空间加载properties</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs java">&lt;context:property-placeholder location=<span class="hljs-string">&quot;jdbc.properties&quot;</span>/&gt;<br></code></pre></td></tr></table></figure>
+<p>可以同时加载多个properties文件  相当于将他们合并加载<br>但如果改为  classpath:*.properties		类路径 则为全部的properties文件<br>仅能加载本工程中读<br>3.使用属性占位符${}读取properties文件中的属性</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs java">&lt;bean class=<span class="hljs-string">&quot;com.alibaba.druid.pool.DruidDataSource&quot;</span>&gt;<br>        &lt;property name=<span class="hljs-string">&quot;driverClassName&quot;</span> value=<span class="hljs-string">&quot;$&#123;jdbc.driver&#125;&quot;</span>/&gt;<br>        &lt;property name=<span class="hljs-string">&quot;url&quot;</span> value=<span class="hljs-string">&quot;$&#123;jdbc.url&#125;&quot;</span>/&gt;<br>        &lt;property name=<span class="hljs-string">&quot;username&quot;</span> value=<span class="hljs-string">&quot;$&#123;jdbc.username&#125;&quot;</span>/&gt;<br>        &lt;property name=<span class="hljs-string">&quot;password&quot;</span> value=<span class="hljs-string">&quot;$&#123;idbc.ppassword&#125;&quot;</span>/&gt;<br>    &lt;/bean&gt;<br></code></pre></td></tr></table></figure>
+
+<p>前期补充:<br>容器初始化方式</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-comment">//通过文件系统加载,绝对路径</span><br>        <span class="hljs-type">ApplicationContext</span> <span class="hljs-variable">ctx2</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">FileSystemXmlApplicationContext</span>(<span class="hljs-string">&quot;</span><br><span class="hljs-string">        (绝对路径)&quot;</span>);<br></code></pre></td></tr></table></figure>
+<p>bean获取的两种方式</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-type">BookDao</span> <span class="hljs-variable">bookDao1</span> <span class="hljs-operator">=</span> ctx.getBean(<span class="hljs-string">&quot;bookDao&quot;</span>,BookDao.class);<br><span class="hljs-type">BookDao</span> <span class="hljs-variable">bookDao2</span> <span class="hljs-operator">=</span> ctx.getBean(BookDao.class);<br></code></pre></td></tr></table></figure>
+<p>BeanFactory</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs java"><br><span class="hljs-comment">//        已废弃的创建方式</span><br>        <span class="hljs-type">Resource</span> <span class="hljs-variable">resources</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">ClassPathResource</span>(<span class="hljs-string">&quot;applicationContext.xml&quot;</span>);<br>        <span class="hljs-type">BeanFactory</span> <span class="hljs-variable">bf</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">XmlBeanFactory</span>(resources);<br>        <span class="hljs-type">BookDao</span> <span class="hljs-variable">bookDao3</span> <span class="hljs-operator">=</span> bf.getBean(BookDao.class);<br>        bookDao3.save();<br></code></pre></td></tr></table></figure>
+<p>两种的区别<br>&#x2F;&#x2F;        BeanFactory 延迟加载 	ApplicationContext 立即加载<br>&#x2F;&#x2F;        在applicationContext.xml种  加上对应的	lazy-init&#x3D;“true”也可以实现延迟加载<br><img src="https://img-blog.csdnimg.cn/969bc284d38e493c8fcf3758dd0c9bc6.png" srcset="/img/loading.gif" lazyload alt="在这里插入图片描述">核心容器总结<br>容器相关<br>●BeanFactory 是IoC容器的顶层接口，初始化BeanFactory对象时，加载的bean延迟加载<br>●ApplicationContext接口是Spring容器的核心接口，初始化时bean立即加载<br>●ApplicationContext接口提供基础的bean操作相关方法， 通过其他接口扩展其功能<br>●ApplicationContext接口常用初始化类<br>    ■ClassPathXmlApplicationContext<br>    ■FileSystemXmlApplicationContext</p>
+<p>bean相关<br><img src="https://img-blog.csdnimg.cn/5634e1ab3e6445ce90c5e14c148ec5ce.png" srcset="/img/loading.gif" lazyload alt="在这里插入图片描述">依赖注入相关<br><img src="https://img-blog.csdnimg.cn/2d25844cff4a44b1ac5ef826e6444764.png" srcset="/img/loading.gif" lazyload alt="在这里插入图片描述"></p>
 
                 
               </div>
@@ -300,7 +318,7 @@
   <div class="license-box my-3">
     <div class="license-title">
       <div></div>
-      <div>http://example.com/2023/03/24/我的第一篇博客文章/</div>
+      <div>http://example.com/2023/03/25/spring学习02/</div>
     </div>
     <div class="license-meta">
       
@@ -312,7 +330,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2023年3月24日</div>
+          <div>2023年3月25日</div>
         </div>
       
       
@@ -344,7 +362,7 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2023/03/25/SpringMVC04/" title="">
+                      <a href="/2023/03/25/spring%E5%AD%A6%E4%B9%A001/" title="">
                         <i class="iconfont icon-arrowleft"></i>
                         <span class="hidden-mobile"></span>
                         <span class="visible-mobile">上一篇</span>
@@ -354,8 +372,8 @@
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2023/03/23/hello-world/" title="Hello World">
-                        <span class="hidden-mobile">Hello World</span>
+                      <a href="/2023/03/25/spring%E5%AD%A6%E4%B9%A004/" title="">
+                        <span class="hidden-mobile"></span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>

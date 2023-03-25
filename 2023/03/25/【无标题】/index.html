@@ -16,22 +16,17 @@
   <meta name="author" content="John Doe">
   <meta name="keywords" content="">
   
-    <meta name="description" content="title: 我的第一篇博客文章date: 2023-03-24 00:31:40tags:REST风格REST简介●REST (Representational State Transfer) ， 表现形式状态转换■传统风格资源描述形式    http:&#x2F;&#x2F;localhost&#x2F;user&#x2F; getById?id&#x3D;1    http:&#x2F;&#x2F;localhost&#x2F;user&#x2F; saveUser■">
+    <meta name="description" content="1.实现Servlet的接口 1234567891011121314151617181920212223242526272829303132import javax.servlet.*;import java.io.IOException;public class HelloServlet implements Servlet &amp;#123;    @Override    public void">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/2023/03/24/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/index.html">
+<meta property="og:url" content="http://example.com/2023/03/25/%E3%80%90%E6%97%A0%E6%A0%87%E9%A2%98%E3%80%91/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="title: 我的第一篇博客文章date: 2023-03-24 00:31:40tags:REST风格REST简介●REST (Representational State Transfer) ， 表现形式状态转换■传统风格资源描述形式    http:&#x2F;&#x2F;localhost&#x2F;user&#x2F; getById?id&#x3D;1    http:&#x2F;&#x2F;localhost&#x2F;user&#x2F; saveUser■">
+<meta property="og:description" content="1.实现Servlet的接口 1234567891011121314151617181920212223242526272829303132import javax.servlet.*;import java.io.IOException;public class HelloServlet implements Servlet &amp;#123;    @Override    public void">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/2ac44b37a73646a3a0cbf20487d7ab19.png">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/08cfae0b07ce4675965fbe3728e3b02f.png">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/e8ea757469294615ba3e30f1d947eb3f.png">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/87f0e3c550404d9683292df490b67901.png">
-<meta property="article:published_time" content="2023-03-23T16:31:40.196Z">
-<meta property="article:modified_time" content="2023-03-24T07:06:14.734Z">
+<meta property="article:published_time" content="2023-03-25T06:14:20.688Z">
+<meta property="article:modified_time" content="2023-03-24T22:13:20.000Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://img-blog.csdnimg.cn/2ac44b37a73646a3a0cbf20487d7ab19.png">
   
   
   
@@ -212,8 +207,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2023-03-24 00:31" pubdate>
-          2023年3月24日 凌晨
+        <time datetime="2023-03-25 14:14" pubdate>
+          2023年3月25日 下午
         </time>
       </span>
     
@@ -224,7 +219,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          818 字
+          610 字
         
       </span>
     
@@ -235,7 +230,7 @@
         
         
         
-          7 分钟
+          6 分钟
         
       </span>
     
@@ -278,10 +273,9 @@
             
               <div class="markdown-body">
                 
-                <hr>
-<p>title: 我的第一篇博客文章<br>date: 2023-03-24 00:31:40<br>tags:<br><strong>REST风格</strong><br>REST简介<br>●REST (Representational State Transfer) ， 表现形式状态转换<br>■传统风格资源描述形式<br>    <a target="_blank" rel="noopener" href="http://localhost/user/">http://localhost/user/</a> getById?id&#x3D;1<br>    <a target="_blank" rel="noopener" href="http://localhost/user/">http://localhost/user/</a> saveUser<br>■REST风格描述形式<br>    <a target="_blank" rel="noopener" href="http://localhost/user/1">http://localhost/user/1</a><br>    <a target="_blank" rel="noopener" href="http://localhost/user">http://localhost/user</a><br>●优点:<br>    ■隐藏资源的访问行为， 无法通过地址得知对资源是何种操作<br>    ■书写简化</p>
-<p>●按照REST风格访问资源时使用行为动作区分对资源进行 了何种操作<br>    ■ <a target="_blank" rel="noopener" href="http://localhost/users">http://localhost/users</a>	查询全部用户信息	GET (查询)<br>    ■<a target="_blank" rel="noopener" href="http://localhost/users/1">http://localhost/users/1</a>	查询指定用户信息	GET (查询)<br>    ■<a target="_blank" rel="noopener" href="http://localhost/users">http://localhost/users</a>	添加用户信息	POST (新增&#x2F;保存)<br>    ■<a target="_blank" rel="noopener" href="http://localhost/users">http://localhost/users</a>	修改用户信息	PUT (修改&#x2F;更新)<br>    ■<a target="_blank" rel="noopener" href="http://localhost/users/1">http://localhost/users/1</a>	删除用户信息	DELETE (删除)<br>●根据REST风格对资源进行访问称为RESTful</p>
-<p>步骤:<br><img src="https://img-blog.csdnimg.cn/2ac44b37a73646a3a0cbf20487d7ab19.png" srcset="/img/loading.gif" lazyload alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/08cfae0b07ce4675965fbe3728e3b02f.png" srcset="/img/loading.gif" lazyload alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/e8ea757469294615ba3e30f1d947eb3f.png" srcset="/img/loading.gif" lazyload alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/87f0e3c550404d9683292df490b67901.png" srcset="/img/loading.gif" lazyload alt="在这里插入图片描述"><br>@RequestBody 		@RequestParam 		@PathVariable<br>●区别<br>■@RequestParam用于接收ur1地址传参或表单传参<br>■@RequestBody用于接收json数据<br>■@PathVariable用于接收路径参数， 使用{参数名称}描述路径参数<br>●应用<br>■后期开发中，发送请求参数超过1个时，以json格式为主, @RequestBody应用较广<br>■如果发送非j son格式数据,选用@RequestParam接收请求参数<br>■采用RESTfu1进行开发，当参数数量较少时，例如1个， 可以采用@PathVariable接收请求路径变量,通常用于传递id值</p>
+                <p>1.实现Servlet的接口</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-keyword">import</span> javax.servlet.*;<br><span class="hljs-keyword">import</span> java.io.IOException;<br><br><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">HelloServlet</span> <span class="hljs-keyword">implements</span> <span class="hljs-title class_">Servlet</span> &#123;<br><br>    <span class="hljs-meta">@Override</span><br>    <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">init</span><span class="hljs-params">(ServletConfig servletConfig)</span> <span class="hljs-keyword">throws</span> ServletException &#123;<br>    &#125;<br><br>    <span class="hljs-meta">@Override</span><br>    <span class="hljs-keyword">public</span> ServletConfig <span class="hljs-title function_">getServletConfig</span><span class="hljs-params">()</span> &#123;<br>        <span class="hljs-keyword">return</span> <span class="hljs-literal">null</span>;<br>    &#125;<br><br>    <span class="hljs-comment">/**</span><br><span class="hljs-comment">     用来处理客户的请求，并对请求做响应的方法</span><br><span class="hljs-comment">     */</span><br>    <span class="hljs-meta">@Override</span><br>    <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">service</span><span class="hljs-params">(ServletRequest req, ServletResponse resp)</span> <span class="hljs-keyword">throws</span> ServletException, IOException &#123;<br>        resp.getWriter().println(<span class="hljs-string">&quot;helloservlet&quot;</span>);<br>    &#125;<br><br>    <span class="hljs-meta">@Override</span><br>    <span class="hljs-keyword">public</span> String <span class="hljs-title function_">getServletInfo</span><span class="hljs-params">()</span> &#123;<br>        <span class="hljs-keyword">return</span> <span class="hljs-literal">null</span>;<br>    &#125;<br><br>    <span class="hljs-meta">@Override</span><br>    <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">destroy</span><span class="hljs-params">()</span> &#123;<br><br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
+
 
                 
               </div>
@@ -300,7 +294,7 @@
   <div class="license-box my-3">
     <div class="license-title">
       <div></div>
-      <div>http://example.com/2023/03/24/我的第一篇博客文章/</div>
+      <div>http://example.com/2023/03/25/【无标题】/</div>
     </div>
     <div class="license-meta">
       
@@ -312,7 +306,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2023年3月24日</div>
+          <div>2023年3月25日</div>
         </div>
       
       
@@ -344,7 +338,7 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2023/03/25/SpringMVC04/" title="">
+                      <a href="/2023/03/25/jdbc%E6%96%B9%E6%B3%95%E5%B0%81%E8%A3%85%E5%A4%84%E7%90%86%E6%A1%88%E4%BE%8B/" title="">
                         <i class="iconfont icon-arrowleft"></i>
                         <span class="hidden-mobile"></span>
                         <span class="visible-mobile">上一篇</span>
@@ -354,8 +348,8 @@
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2023/03/23/hello-world/" title="Hello World">
-                        <span class="hidden-mobile">Hello World</span>
+                      <a href="/2023/03/25/%E9%94%99%E8%AF%AF%E5%90%88%E9%9B%86/" title="">
+                        <span class="hidden-mobile"></span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>

@@ -16,22 +16,17 @@
   <meta name="author" content="John Doe">
   <meta name="keywords" content="">
   
-    <meta name="description" content="title: 我的第一篇博客文章date: 2023-03-24 00:31:40tags:REST风格REST简介●REST (Representational State Transfer) ， 表现形式状态转换■传统风格资源描述形式    http:&#x2F;&#x2F;localhost&#x2F;user&#x2F; getById?id&#x3D;1    http:&#x2F;&#x2F;localhost&#x2F;user&#x2F; saveUser■">
+    <meta name="description" content="案例描述：要求运行主类main方法后，控制台提示输入管理员账号密码登录，登陆成功后显示如下：请您输入编号进行相关书籍管理操作：1、查看书籍列表2、添加书籍3、删除书籍当输入1之后显示全部书籍信息(书籍编号，书籍名称，书籍余量，书籍分类)；查看全部书籍信息后。输入index返回功能页面当输入2之后控制台显示如下：请您输入新书籍的名称：当输入书籍名称之后控制台显示如下：请您输入新书籍的数量：当输入书籍">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/2023/03/24/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/index.html">
+<meta property="og:url" content="http://example.com/2023/03/25/jdbc%E6%96%B9%E6%B3%95%E5%B0%81%E8%A3%85%E5%A4%84%E7%90%86%E6%A1%88%E4%BE%8B/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="title: 我的第一篇博客文章date: 2023-03-24 00:31:40tags:REST风格REST简介●REST (Representational State Transfer) ， 表现形式状态转换■传统风格资源描述形式    http:&#x2F;&#x2F;localhost&#x2F;user&#x2F; getById?id&#x3D;1    http:&#x2F;&#x2F;localhost&#x2F;user&#x2F; saveUser■">
+<meta property="og:description" content="案例描述：要求运行主类main方法后，控制台提示输入管理员账号密码登录，登陆成功后显示如下：请您输入编号进行相关书籍管理操作：1、查看书籍列表2、添加书籍3、删除书籍当输入1之后显示全部书籍信息(书籍编号，书籍名称，书籍余量，书籍分类)；查看全部书籍信息后。输入index返回功能页面当输入2之后控制台显示如下：请您输入新书籍的名称：当输入书籍名称之后控制台显示如下：请您输入新书籍的数量：当输入书籍">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/2ac44b37a73646a3a0cbf20487d7ab19.png">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/08cfae0b07ce4675965fbe3728e3b02f.png">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/e8ea757469294615ba3e30f1d947eb3f.png">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/87f0e3c550404d9683292df490b67901.png">
-<meta property="article:published_time" content="2023-03-23T16:31:40.196Z">
-<meta property="article:modified_time" content="2023-03-24T07:06:14.734Z">
+<meta property="article:published_time" content="2023-03-25T06:14:20.688Z">
+<meta property="article:modified_time" content="2023-03-24T22:13:20.000Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://img-blog.csdnimg.cn/2ac44b37a73646a3a0cbf20487d7ab19.png">
   
   
   
@@ -212,8 +207,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2023-03-24 00:31" pubdate>
-          2023年3月24日 凌晨
+        <time datetime="2023-03-25 14:14" pubdate>
+          2023年3月25日 下午
         </time>
       </span>
     
@@ -224,7 +219,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          818 字
+          2.1k 字
         
       </span>
     
@@ -235,7 +230,7 @@
         
         
         
-          7 分钟
+          18 分钟
         
       </span>
     
@@ -278,10 +273,20 @@
             
               <div class="markdown-body">
                 
-                <hr>
-<p>title: 我的第一篇博客文章<br>date: 2023-03-24 00:31:40<br>tags:<br><strong>REST风格</strong><br>REST简介<br>●REST (Representational State Transfer) ， 表现形式状态转换<br>■传统风格资源描述形式<br>    <a target="_blank" rel="noopener" href="http://localhost/user/">http://localhost/user/</a> getById?id&#x3D;1<br>    <a target="_blank" rel="noopener" href="http://localhost/user/">http://localhost/user/</a> saveUser<br>■REST风格描述形式<br>    <a target="_blank" rel="noopener" href="http://localhost/user/1">http://localhost/user/1</a><br>    <a target="_blank" rel="noopener" href="http://localhost/user">http://localhost/user</a><br>●优点:<br>    ■隐藏资源的访问行为， 无法通过地址得知对资源是何种操作<br>    ■书写简化</p>
-<p>●按照REST风格访问资源时使用行为动作区分对资源进行 了何种操作<br>    ■ <a target="_blank" rel="noopener" href="http://localhost/users">http://localhost/users</a>	查询全部用户信息	GET (查询)<br>    ■<a target="_blank" rel="noopener" href="http://localhost/users/1">http://localhost/users/1</a>	查询指定用户信息	GET (查询)<br>    ■<a target="_blank" rel="noopener" href="http://localhost/users">http://localhost/users</a>	添加用户信息	POST (新增&#x2F;保存)<br>    ■<a target="_blank" rel="noopener" href="http://localhost/users">http://localhost/users</a>	修改用户信息	PUT (修改&#x2F;更新)<br>    ■<a target="_blank" rel="noopener" href="http://localhost/users/1">http://localhost/users/1</a>	删除用户信息	DELETE (删除)<br>●根据REST风格对资源进行访问称为RESTful</p>
-<p>步骤:<br><img src="https://img-blog.csdnimg.cn/2ac44b37a73646a3a0cbf20487d7ab19.png" srcset="/img/loading.gif" lazyload alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/08cfae0b07ce4675965fbe3728e3b02f.png" srcset="/img/loading.gif" lazyload alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/e8ea757469294615ba3e30f1d947eb3f.png" srcset="/img/loading.gif" lazyload alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/87f0e3c550404d9683292df490b67901.png" srcset="/img/loading.gif" lazyload alt="在这里插入图片描述"><br>@RequestBody 		@RequestParam 		@PathVariable<br>●区别<br>■@RequestParam用于接收ur1地址传参或表单传参<br>■@RequestBody用于接收json数据<br>■@PathVariable用于接收路径参数， 使用{参数名称}描述路径参数<br>●应用<br>■后期开发中，发送请求参数超过1个时，以json格式为主, @RequestBody应用较广<br>■如果发送非j son格式数据,选用@RequestParam接收请求参数<br>■采用RESTfu1进行开发，当参数数量较少时，例如1个， 可以采用@PathVariable接收请求路径变量,通常用于传递id值</p>
+                <p>案例描述：要求运行主类main方法后，控制台提示输入管理员账号密码登录，登陆成功后显示如下：<br>请您输入编号进行相关书籍管理操作：<br>1、查看书籍列表<br>2、添加书籍<br>3、删除书籍<br>当输入1之后显示全部书籍信息(书籍编号，书籍名称，书籍余量，书籍分类)；<br>查看全部书籍信息后。输入index返回功能页面<br>当输入2之后控制台显示如下：<br>请您输入新书籍的名称：<br>当输入书籍名称之后控制台显示如下：<br>请您输入新书籍的数量：<br>当输入书籍数量之后控制台显示如下：<br>请您输入新书籍的分类：<br>当输入书籍分类之后控制台显示：<br>添加新书籍成功。输入index返回功能页面<br>当输入3之后控制台显示如下：<br>请您输入要删除的书籍的名称：<br>删除指定的书籍成功。输入index返回功能页面</p>
+<h2 id="以上为案例要求"><a href="#以上为案例要求" class="headerlink" title="以上为案例要求"></a>以上为案例要求</h2><p>思路整合：<br>需要使用到数据库，因此要进行jdbc相关操作<br>具体来讲：<br>public static void getConnection(){}<br>首先需要获取连接包括注册驱动，对标url，username，password以获取连接，因此在此之前  定义url，username，password，此外还需要定义一个空的Connection(因为作为案例，中间会多次使用try catch捕获错误 来进行错误整改)<br>public static boolean login(String xxx, String xxx){}<br>其次 根据要求  “控制台提示输入管理员账号密码登录”  我们需要在数据库中建立有关管理员的表  通过上面已经建立起连接(调用方法)，就得创建对象并用sql语句了<br>“select * from xxx(数据库名).xxx(表名) where username(对应表内定义的名字) &#x3D; ‘“ + xxx(该方法的第一个参数)+ “‘ and password(对应表内定义的名字) &#x3D; “ + xxx(该方法的第二个参数) + “ limit 1(此处是为了防止在数据库中查到多条账号和密码相同的信息)”</p>
+<p>此处我的第一个参数我是加了双引号之后又加了单引号 目前还不清楚只加双引号错误的原因。<br>前面获取数据库了，在不使用数据库的时候就要关闭掉，因此还需要写一个public static void shutConnection(){}来在登录后就关闭</p>
+<p>既然登录了  就得判断登录是否成功，得再定义一个标识，用来证明登录成功，并作为返回值</p>
+<p>到此   登录已经结束<br>新建一个java，main方法测试登录是否正常  在main方法中考虑到 不仅这里需要输入账号密码，之后添加书籍还需要舒服四个数据，如果要new 的话 就需要new好几个了  于是乎，考虑在创建一个方法  只用new一个  然后通过掉方法  复用<br>public static Scanner getScanner() {return new Scanner(System.in);</p>
+<p>下面就是如何增删查了<br>同样要去数据库先建立好表，有四个参数，我们就得建立book类，重写toString，还有就是get set方法（注意 这里的四个参数必须和建立的表中的参数一致）</p>
+<p>作为工具类 算是和连接一类了，因此都放在一起<br>查的功能是要返回所有的书籍，因此要用容器来装对象，再将对象sout出来<br>接下来就是定义并执行sql语句<br>“select * from xxx(数据库名).xxx(表名)”<br>因为需要查询所有的书籍，所以用while循环  知道数据库中null<br>举例： book book &#x3D; new book();<br>               book.setId(resultSet.getInt(“id”));<br>               …..<br>               bookList.add(book);</p>
+<p>添加书籍即为set，因为设定为每次只能添加一本书，所以提前做标识，返回被影响的行数赋值给标识</p>
+<p>删除书籍与添加书籍相识   既然删除 就需要找到一个标识，可以定义为书名，之后就是同添加书籍的做法一样了</p>
+<p>再有就是结尾工作了建立一个选项java  用于在输入1，2，3，index时判断进入哪个方法<br>public static void getnum()<br>public static Object panduan(int num)<br>public static void returnIndex(String index)</p>
+<p>综上：<br>main中一个主方法</p>
+<p>book中重写toString    构建get set方法</p>
+<p>工具类 public static void getConnection(){}<br>public static boolean login(String xxx, String xxx){}<br>public static List<book> SelectBook(){}<br>public static Boolean addbook(book book){}<br>public static Boolean deletebook(String bookname){}<br>public static void shutConnection(){}</p>
+<p>选项类public static void getnum()<br>public static Object panduan(int num)<br>public static void returnIndex(String index)<br>public static Scanner getScanner() {return new Scanner(System.in);</p>
 
                 
               </div>
@@ -300,7 +305,7 @@
   <div class="license-box my-3">
     <div class="license-title">
       <div></div>
-      <div>http://example.com/2023/03/24/我的第一篇博客文章/</div>
+      <div>http://example.com/2023/03/25/jdbc方法封装处理案例/</div>
     </div>
     <div class="license-meta">
       
@@ -312,7 +317,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2023年3月24日</div>
+          <div>2023年3月25日</div>
         </div>
       
       
@@ -344,7 +349,7 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2023/03/25/SpringMVC04/" title="">
+                      <a href="/2023/03/25/JDBC%E5%AD%A6%E4%B9%A0%E6%97%A5%E5%BF%97/" title="">
                         <i class="iconfont icon-arrowleft"></i>
                         <span class="hidden-mobile"></span>
                         <span class="visible-mobile">上一篇</span>
@@ -354,8 +359,8 @@
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2023/03/23/hello-world/" title="Hello World">
-                        <span class="hidden-mobile">Hello World</span>
+                      <a href="/2023/03/25/%E3%80%90%E6%97%A0%E6%A0%87%E9%A2%98%E3%80%91/" title="">
+                        <span class="hidden-mobile"></span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>

@@ -16,22 +16,17 @@
   <meta name="author" content="John Doe">
   <meta name="keywords" content="">
   
-    <meta name="description" content="title: 我的第一篇博客文章date: 2023-03-24 00:31:40tags:REST风格REST简介●REST (Representational State Transfer) ， 表现形式状态转换■传统风格资源描述形式    http:&#x2F;&#x2F;localhost&#x2F;user&#x2F; getById?id&#x3D;1    http:&#x2F;&#x2F;localhost&#x2F;user&#x2F; saveUser■">
+    <meta name="description" content="内嵌wxs脚本wxs代码可以编写在wxml文件中的标签内，就像Javascript代码可以编写在html文件中的标签内一样。wxml文件中的每个标签,必须提供module属性,用来指定当前wxs的模块名称，方便在wxml中访问模块中的成员:定义外联的wxs脚本WxS代码还可以编写在以.WXS为后缀名的文件内，就像javascript代码可以编写在以js为后缀名的文件中一样。使用外联的WXs脚本在w">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/2023/03/24/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/index.html">
+<meta property="og:url" content="http://example.com/2023/03/25/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8Fday08/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="title: 我的第一篇博客文章date: 2023-03-24 00:31:40tags:REST风格REST简介●REST (Representational State Transfer) ， 表现形式状态转换■传统风格资源描述形式    http:&#x2F;&#x2F;localhost&#x2F;user&#x2F; getById?id&#x3D;1    http:&#x2F;&#x2F;localhost&#x2F;user&#x2F; saveUser■">
+<meta property="og:description" content="内嵌wxs脚本wxs代码可以编写在wxml文件中的标签内，就像Javascript代码可以编写在html文件中的标签内一样。wxml文件中的每个标签,必须提供module属性,用来指定当前wxs的模块名称，方便在wxml中访问模块中的成员:定义外联的wxs脚本WxS代码还可以编写在以.WXS为后缀名的文件内，就像javascript代码可以编写在以js为后缀名的文件中一样。使用外联的WXs脚本在w">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/2ac44b37a73646a3a0cbf20487d7ab19.png">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/08cfae0b07ce4675965fbe3728e3b02f.png">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/e8ea757469294615ba3e30f1d947eb3f.png">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/87f0e3c550404d9683292df490b67901.png">
-<meta property="article:published_time" content="2023-03-23T16:31:40.196Z">
-<meta property="article:modified_time" content="2023-03-24T07:06:14.734Z">
+<meta property="article:published_time" content="2023-03-25T06:14:20.684Z">
+<meta property="article:modified_time" content="2023-03-24T22:13:18.000Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://img-blog.csdnimg.cn/2ac44b37a73646a3a0cbf20487d7ab19.png">
   
   
   
@@ -212,8 +207,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2023-03-24 00:31" pubdate>
-          2023年3月24日 凌晨
+        <time datetime="2023-03-25 14:14" pubdate>
+          2023年3月25日 下午
         </time>
       </span>
     
@@ -224,7 +219,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          818 字
+          742 字
         
       </span>
     
@@ -278,10 +273,10 @@
             
               <div class="markdown-body">
                 
-                <hr>
-<p>title: 我的第一篇博客文章<br>date: 2023-03-24 00:31:40<br>tags:<br><strong>REST风格</strong><br>REST简介<br>●REST (Representational State Transfer) ， 表现形式状态转换<br>■传统风格资源描述形式<br>    <a target="_blank" rel="noopener" href="http://localhost/user/">http://localhost/user/</a> getById?id&#x3D;1<br>    <a target="_blank" rel="noopener" href="http://localhost/user/">http://localhost/user/</a> saveUser<br>■REST风格描述形式<br>    <a target="_blank" rel="noopener" href="http://localhost/user/1">http://localhost/user/1</a><br>    <a target="_blank" rel="noopener" href="http://localhost/user">http://localhost/user</a><br>●优点:<br>    ■隐藏资源的访问行为， 无法通过地址得知对资源是何种操作<br>    ■书写简化</p>
-<p>●按照REST风格访问资源时使用行为动作区分对资源进行 了何种操作<br>    ■ <a target="_blank" rel="noopener" href="http://localhost/users">http://localhost/users</a>	查询全部用户信息	GET (查询)<br>    ■<a target="_blank" rel="noopener" href="http://localhost/users/1">http://localhost/users/1</a>	查询指定用户信息	GET (查询)<br>    ■<a target="_blank" rel="noopener" href="http://localhost/users">http://localhost/users</a>	添加用户信息	POST (新增&#x2F;保存)<br>    ■<a target="_blank" rel="noopener" href="http://localhost/users">http://localhost/users</a>	修改用户信息	PUT (修改&#x2F;更新)<br>    ■<a target="_blank" rel="noopener" href="http://localhost/users/1">http://localhost/users/1</a>	删除用户信息	DELETE (删除)<br>●根据REST风格对资源进行访问称为RESTful</p>
-<p>步骤:<br><img src="https://img-blog.csdnimg.cn/2ac44b37a73646a3a0cbf20487d7ab19.png" srcset="/img/loading.gif" lazyload alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/08cfae0b07ce4675965fbe3728e3b02f.png" srcset="/img/loading.gif" lazyload alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/e8ea757469294615ba3e30f1d947eb3f.png" srcset="/img/loading.gif" lazyload alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/87f0e3c550404d9683292df490b67901.png" srcset="/img/loading.gif" lazyload alt="在这里插入图片描述"><br>@RequestBody 		@RequestParam 		@PathVariable<br>●区别<br>■@RequestParam用于接收ur1地址传参或表单传参<br>■@RequestBody用于接收json数据<br>■@PathVariable用于接收路径参数， 使用{参数名称}描述路径参数<br>●应用<br>■后期开发中，发送请求参数超过1个时，以json格式为主, @RequestBody应用较广<br>■如果发送非j son格式数据,选用@RequestParam接收请求参数<br>■采用RESTfu1进行开发，当参数数量较少时，例如1个， 可以采用@PathVariable接收请求路径变量,通常用于传递id值</p>
+                <p>内嵌wxs脚本<br>wxs代码可以编写在wxml文件中的<wxs>标签内，就像Javascript代码可以编写在html文件中的<script>标签内一样。<br>wxml文件中的每个<wxs></wxs>标签,必须提供module属性,用来指定当前wxs的模块名称，方便在<br>wxml中访问模块中的成员:<br>定义外联的wxs脚本<br>WxS代码还可以编写在以.WXS为后缀名的文件内，就像javascript代码可以编写在以js为后缀名的文件中一样。<br>使用外联的WXs脚本<br>在wxml中引入外联的wxs脚本时，必须为<wxs>标签添加module和src属性,其中:<br>module 用来指定模块的名称<br>src用来指定要引入的脚本的路径，且必须是相对路径</p>
+<p>wxs与JavaScript不同<br>为了降低wxs (WeiXin Script)的学习成本，wxs 语言在设计时借大量鉴了JavaScript的语法。但是本质上wxs和JavaScript是完全不同的两种语言!<br>不能作为组件的事件回调<br>WXS典型的应用场景就是“过滤器”<br>经常配合Mustache语法进行使用<br>隔离性<br>隔离性指的是WXS的运行环境和其他JavaScript代码是隔离的。体现在如下两方面:<br>①wXS不能调用js中定义的函数<br>②WXS不能调用小程序提供的API<br>性能好<br>在ioS设备.上,小程序内的WXS会比JavaScript代码快2~20倍<br>在android设备上，二者的运行效率无差异</p>
+<p>列表页面的API接口<br>以分页的形式，加载指定分类下商铺列表的数据:<br>①接口地址<br><a target="_blank" rel="noopener" href="https://www.escook.cn/">https://www.escook.cn/</a> categories/:cate_ id/shops<br>URL 地址中的:cate_ id 是动态参数,表示分类的ld<br>②请求方式<br>GET 请求<br>③请求参数<br>page 表示请求第几页的数据<br>limit表示每页请求几条数据</p>
+<p>一个本地生活小案例结束了<br>代码下一个日志</p>
 
                 
               </div>
@@ -300,7 +295,7 @@
   <div class="license-box my-3">
     <div class="license-title">
       <div></div>
-      <div>http://example.com/2023/03/24/我的第一篇博客文章/</div>
+      <div>http://example.com/2023/03/25/微信小程序day08/</div>
     </div>
     <div class="license-meta">
       
@@ -312,7 +307,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2023年3月24日</div>
+          <div>2023年3月25日</div>
         </div>
       
       
@@ -344,7 +339,7 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2023/03/25/SpringMVC04/" title="">
+                      <a href="/2023/03/25/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8Fday07/" title="">
                         <i class="iconfont icon-arrowleft"></i>
                         <span class="hidden-mobile"></span>
                         <span class="visible-mobile">上一篇</span>
@@ -354,8 +349,8 @@
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2023/03/23/hello-world/" title="Hello World">
-                        <span class="hidden-mobile">Hello World</span>
+                      <a href="/2023/03/25/%E2%80%9C%E6%9C%AC%E5%9C%B0%E7%94%9F%E6%B4%BB%E2%80%9D%E6%A1%88%E4%BE%8B%E4%BB%A3%E7%A0%81/" title="">
+                        <span class="hidden-mobile"></span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>

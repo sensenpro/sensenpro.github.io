@@ -16,22 +16,25 @@
   <meta name="author" content="John Doe">
   <meta name="keywords" content="">
   
-    <meta name="description" content="title: 我的第一篇博客文章date: 2023-03-24 00:31:40tags:REST风格REST简介●REST (Representational State Transfer) ， 表现形式状态转换■传统风格资源描述形式    http:&#x2F;&#x2F;localhost&#x2F;user&#x2F; getById?id&#x3D;1    http:&#x2F;&#x2F;localhost&#x2F;user&#x2F; saveUser■">
+    <meta name="description" content="入门案例工作流程分析●启动服务器初始化过程1.服务器启动，执行ServletContainersInitConfig类, 初始化web容器2.执行createServletApplicationContext方法， 创建了WebApplicationContext对象3.加载SpringMvcConfig4.执行@ComponentScan加载对应的bean5.加载UserController,">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/2023/03/24/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/index.html">
+<meta property="og:url" content="http://example.com/2023/03/25/SpringMVC02/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="title: 我的第一篇博客文章date: 2023-03-24 00:31:40tags:REST风格REST简介●REST (Representational State Transfer) ， 表现形式状态转换■传统风格资源描述形式    http:&#x2F;&#x2F;localhost&#x2F;user&#x2F; getById?id&#x3D;1    http:&#x2F;&#x2F;localhost&#x2F;user&#x2F; saveUser■">
+<meta property="og:description" content="入门案例工作流程分析●启动服务器初始化过程1.服务器启动，执行ServletContainersInitConfig类, 初始化web容器2.执行createServletApplicationContext方法， 创建了WebApplicationContext对象3.加载SpringMvcConfig4.执行@ComponentScan加载对应的bean5.加载UserController,">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/2ac44b37a73646a3a0cbf20487d7ab19.png">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/08cfae0b07ce4675965fbe3728e3b02f.png">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/e8ea757469294615ba3e30f1d947eb3f.png">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/87f0e3c550404d9683292df490b67901.png">
-<meta property="article:published_time" content="2023-03-23T16:31:40.196Z">
-<meta property="article:modified_time" content="2023-03-24T07:06:14.734Z">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/e475823904b34ea7891d04372afb21b4.png">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/8cf9ee37d72d479abbf8a1b02667f0f0.png">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/d285430202db47eb90e4469f7a813222.png">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/80115d9b330846cb86076b6ebde916b9.png">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/a39f16c820b94525bedc072aedc23ebc.png">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/7d0aeeaf760445d28e0aaac996decdee.png">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/070bbbdda5bb43a0a03d8073a711685a.png">
+<meta property="article:published_time" content="2023-03-25T06:14:20.677Z">
+<meta property="article:modified_time" content="2023-03-24T22:13:16.000Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://img-blog.csdnimg.cn/2ac44b37a73646a3a0cbf20487d7ab19.png">
+<meta name="twitter:image" content="https://img-blog.csdnimg.cn/e475823904b34ea7891d04372afb21b4.png">
   
   
   
@@ -212,8 +215,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2023-03-24 00:31" pubdate>
-          2023年3月24日 凌晨
+        <time datetime="2023-03-25 14:14" pubdate>
+          2023年3月25日 下午
         </time>
       </span>
     
@@ -224,7 +227,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          818 字
+          903 字
         
       </span>
     
@@ -235,7 +238,7 @@
         
         
         
-          7 分钟
+          8 分钟
         
       </span>
     
@@ -278,10 +281,11 @@
             
               <div class="markdown-body">
                 
-                <hr>
-<p>title: 我的第一篇博客文章<br>date: 2023-03-24 00:31:40<br>tags:<br><strong>REST风格</strong><br>REST简介<br>●REST (Representational State Transfer) ， 表现形式状态转换<br>■传统风格资源描述形式<br>    <a target="_blank" rel="noopener" href="http://localhost/user/">http://localhost/user/</a> getById?id&#x3D;1<br>    <a target="_blank" rel="noopener" href="http://localhost/user/">http://localhost/user/</a> saveUser<br>■REST风格描述形式<br>    <a target="_blank" rel="noopener" href="http://localhost/user/1">http://localhost/user/1</a><br>    <a target="_blank" rel="noopener" href="http://localhost/user">http://localhost/user</a><br>●优点:<br>    ■隐藏资源的访问行为， 无法通过地址得知对资源是何种操作<br>    ■书写简化</p>
-<p>●按照REST风格访问资源时使用行为动作区分对资源进行 了何种操作<br>    ■ <a target="_blank" rel="noopener" href="http://localhost/users">http://localhost/users</a>	查询全部用户信息	GET (查询)<br>    ■<a target="_blank" rel="noopener" href="http://localhost/users/1">http://localhost/users/1</a>	查询指定用户信息	GET (查询)<br>    ■<a target="_blank" rel="noopener" href="http://localhost/users">http://localhost/users</a>	添加用户信息	POST (新增&#x2F;保存)<br>    ■<a target="_blank" rel="noopener" href="http://localhost/users">http://localhost/users</a>	修改用户信息	PUT (修改&#x2F;更新)<br>    ■<a target="_blank" rel="noopener" href="http://localhost/users/1">http://localhost/users/1</a>	删除用户信息	DELETE (删除)<br>●根据REST风格对资源进行访问称为RESTful</p>
-<p>步骤:<br><img src="https://img-blog.csdnimg.cn/2ac44b37a73646a3a0cbf20487d7ab19.png" srcset="/img/loading.gif" lazyload alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/08cfae0b07ce4675965fbe3728e3b02f.png" srcset="/img/loading.gif" lazyload alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/e8ea757469294615ba3e30f1d947eb3f.png" srcset="/img/loading.gif" lazyload alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/87f0e3c550404d9683292df490b67901.png" srcset="/img/loading.gif" lazyload alt="在这里插入图片描述"><br>@RequestBody 		@RequestParam 		@PathVariable<br>●区别<br>■@RequestParam用于接收ur1地址传参或表单传参<br>■@RequestBody用于接收json数据<br>■@PathVariable用于接收路径参数， 使用{参数名称}描述路径参数<br>●应用<br>■后期开发中，发送请求参数超过1个时，以json格式为主, @RequestBody应用较广<br>■如果发送非j son格式数据,选用@RequestParam接收请求参数<br>■采用RESTfu1进行开发，当参数数量较少时，例如1个， 可以采用@PathVariable接收请求路径变量,通常用于传递id值</p>
+                <p>入门案例工作流程分析<br>●启动服务器初始化过程<br>1.服务器启动，执行ServletContainersInitConfig类, 初始化web容器<br>2.执行createServletApplicationContext方法， 创建了WebApplicationContext对象<br>3.加载SpringMvcConfig<br>4.执行@ComponentScan加载对应的bean<br>5.加载UserController, 每个@RequestMapping的名称对应一个具体的方法<br>6.执行getServletMappings方法, 定义所有的请求都通过SpringMVC<br>●单次请求过程<br>1.发送请求localhost&#x2F;save<br>2. web容器发现所有请求都经过SpringMVC, 将请求交给SpringMVC处理<br>3.解析请求路径&#x2F;save<br>4.由&#x2F;save匹配执行对应的方法save()<br>5.执行save()<br>6.检测到有@ResponseBody 直接将save( )方法的返回值作为响应求体返回给请求方<br><img src="https://img-blog.csdnimg.cn/e475823904b34ea7891d04372afb21b4.png" srcset="/img/loading.gif" lazyload alt="在这里插入图片描述"></p>
+<p><strong>Controller加载控制与业务bean加载控制</strong><br>●SpringMVC相关bean (表现层bean)<br>●Spring控制的bean<br>    ●业务bean (Service)<br>    ●功能bean (DataSource等)</p>
+<p>●SpringMVC相关bean加载控制<br>●SpringMVC加载的bean对应的包均在com. itheima. controller包内<br>●Spring相关bean加载控制<br>●方式一: Spring加载的bean设定扫描范围为com. itheima,排除掉controller包内的bean<br>●方式二: Spring加载的bean设定扫描范围为精准范围，例如service包、 dao包等<br>●方式三:不区分Spring与SpringMVC的环境,加载到同-一个环境中</p>
+<p><img src="https://img-blog.csdnimg.cn/8cf9ee37d72d479abbf8a1b02667f0f0.png" srcset="/img/loading.gif" lazyload alt="在这里插入图片描述"><br>PostMan简介<br>●Postman是一 -款功能强大的网页调试与发送网页HTTP请求的Chrome插件<br>●作用:常用于进行接口测试<br>●特征<br>    ■简单<br>    ■实用<br>    ■美观<br>    ■大方<br>PostMan基本使用<br>●注册登录<br>●创建工作空间&#x2F;进入工作空间<br>●发起请求测试结果</p>
+<p>请求映射路径<br><img src="https://img-blog.csdnimg.cn/d285430202db47eb90e4469f7a813222.png" srcset="/img/loading.gif" lazyload alt="在这里插入图片描述"><br>请求参数<br><img src="https://img-blog.csdnimg.cn/80115d9b330846cb86076b6ebde916b9.png" srcset="/img/loading.gif" lazyload alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/a39f16c820b94525bedc072aedc23ebc.png" srcset="/img/loading.gif" lazyload alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/7d0aeeaf760445d28e0aaac996decdee.png" srcset="/img/loading.gif" lazyload alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/070bbbdda5bb43a0a03d8073a711685a.png" srcset="/img/loading.gif" lazyload alt="在这里插入图片描述"></p>
 
                 
               </div>
@@ -300,7 +304,7 @@
   <div class="license-box my-3">
     <div class="license-title">
       <div></div>
-      <div>http://example.com/2023/03/24/我的第一篇博客文章/</div>
+      <div>http://example.com/2023/03/25/SpringMVC02/</div>
     </div>
     <div class="license-meta">
       
@@ -312,7 +316,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2023年3月24日</div>
+          <div>2023年3月25日</div>
         </div>
       
       
@@ -344,7 +348,7 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2023/03/25/SpringMVC04/" title="">
+                      <a href="/2023/03/25/spring08/" title="">
                         <i class="iconfont icon-arrowleft"></i>
                         <span class="hidden-mobile"></span>
                         <span class="visible-mobile">上一篇</span>
@@ -354,8 +358,8 @@
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2023/03/23/hello-world/" title="Hello World">
-                        <span class="hidden-mobile">Hello World</span>
+                      <a href="/2023/03/25/%E5%8A%9B%E6%89%A3/" title="">
+                        <span class="hidden-mobile"></span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>

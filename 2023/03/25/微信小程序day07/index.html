@@ -16,22 +16,19 @@
   <meta name="author" content="John Doe">
   <meta name="keywords" content="">
   
-    <meta name="description" content="title: 我的第一篇博客文章date: 2023-03-24 00:31:40tags:REST风格REST简介●REST (Representational State Transfer) ， 表现形式状态转换■传统风格资源描述形式    http:&#x2F;&#x2F;localhost&#x2F;user&#x2F; getById?id&#x3D;1    http:&#x2F;&#x2F;localhost&#x2F;user&#x2F; saveUser■">
+    <meta name="description" content="停止下拉刷新的效果当处理完下拉刷新后，下拉刷新的loading效果会一直 显示，不会主动消失，所以需要手动隐loading效果。此时，调用wx.stopPullDownRefresh()可以停止当前页面的下拉刷新 上拉触底是移动端的专有名词，通过手指在屏幕上的上拉滑动操作，从而加载更多数据的行为。监听页面的上拉触底事件在页面的.js文件中，通过onReachBottom()函数即可监听当前页面的">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/2023/03/24/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/index.html">
+<meta property="og:url" content="http://example.com/2023/03/25/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8Fday07/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="title: 我的第一篇博客文章date: 2023-03-24 00:31:40tags:REST风格REST简介●REST (Representational State Transfer) ， 表现形式状态转换■传统风格资源描述形式    http:&#x2F;&#x2F;localhost&#x2F;user&#x2F; getById?id&#x3D;1    http:&#x2F;&#x2F;localhost&#x2F;user&#x2F; saveUser■">
+<meta property="og:description" content="停止下拉刷新的效果当处理完下拉刷新后，下拉刷新的loading效果会一直 显示，不会主动消失，所以需要手动隐loading效果。此时，调用wx.stopPullDownRefresh()可以停止当前页面的下拉刷新 上拉触底是移动端的专有名词，通过手指在屏幕上的上拉滑动操作，从而加载更多数据的行为。监听页面的上拉触底事件在页面的.js文件中，通过onReachBottom()函数即可监听当前页面的">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/2ac44b37a73646a3a0cbf20487d7ab19.png">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/08cfae0b07ce4675965fbe3728e3b02f.png">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/e8ea757469294615ba3e30f1d947eb3f.png">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/87f0e3c550404d9683292df490b67901.png">
-<meta property="article:published_time" content="2023-03-23T16:31:40.196Z">
-<meta property="article:modified_time" content="2023-03-24T07:06:14.734Z">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20363c6ea05f41f8ad7c310f7182fd4e.png">
+<meta property="article:published_time" content="2023-03-25T06:14:20.684Z">
+<meta property="article:modified_time" content="2023-03-24T22:13:18.000Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://img-blog.csdnimg.cn/2ac44b37a73646a3a0cbf20487d7ab19.png">
+<meta name="twitter:image" content="https://img-blog.csdnimg.cn/20363c6ea05f41f8ad7c310f7182fd4e.png">
   
   
   
@@ -212,8 +209,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2023-03-24 00:31" pubdate>
-          2023年3月24日 凌晨
+        <time datetime="2023-03-25 14:14" pubdate>
+          2023年3月25日 下午
         </time>
       </span>
     
@@ -224,7 +221,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          818 字
+          3.1k 字
         
       </span>
     
@@ -235,7 +232,7 @@
         
         
         
-          7 分钟
+          26 分钟
         
       </span>
     
@@ -278,10 +275,23 @@
             
               <div class="markdown-body">
                 
-                <hr>
-<p>title: 我的第一篇博客文章<br>date: 2023-03-24 00:31:40<br>tags:<br><strong>REST风格</strong><br>REST简介<br>●REST (Representational State Transfer) ， 表现形式状态转换<br>■传统风格资源描述形式<br>    <a target="_blank" rel="noopener" href="http://localhost/user/">http://localhost/user/</a> getById?id&#x3D;1<br>    <a target="_blank" rel="noopener" href="http://localhost/user/">http://localhost/user/</a> saveUser<br>■REST风格描述形式<br>    <a target="_blank" rel="noopener" href="http://localhost/user/1">http://localhost/user/1</a><br>    <a target="_blank" rel="noopener" href="http://localhost/user">http://localhost/user</a><br>●优点:<br>    ■隐藏资源的访问行为， 无法通过地址得知对资源是何种操作<br>    ■书写简化</p>
-<p>●按照REST风格访问资源时使用行为动作区分对资源进行 了何种操作<br>    ■ <a target="_blank" rel="noopener" href="http://localhost/users">http://localhost/users</a>	查询全部用户信息	GET (查询)<br>    ■<a target="_blank" rel="noopener" href="http://localhost/users/1">http://localhost/users/1</a>	查询指定用户信息	GET (查询)<br>    ■<a target="_blank" rel="noopener" href="http://localhost/users">http://localhost/users</a>	添加用户信息	POST (新增&#x2F;保存)<br>    ■<a target="_blank" rel="noopener" href="http://localhost/users">http://localhost/users</a>	修改用户信息	PUT (修改&#x2F;更新)<br>    ■<a target="_blank" rel="noopener" href="http://localhost/users/1">http://localhost/users/1</a>	删除用户信息	DELETE (删除)<br>●根据REST风格对资源进行访问称为RESTful</p>
-<p>步骤:<br><img src="https://img-blog.csdnimg.cn/2ac44b37a73646a3a0cbf20487d7ab19.png" srcset="/img/loading.gif" lazyload alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/08cfae0b07ce4675965fbe3728e3b02f.png" srcset="/img/loading.gif" lazyload alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/e8ea757469294615ba3e30f1d947eb3f.png" srcset="/img/loading.gif" lazyload alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/87f0e3c550404d9683292df490b67901.png" srcset="/img/loading.gif" lazyload alt="在这里插入图片描述"><br>@RequestBody 		@RequestParam 		@PathVariable<br>●区别<br>■@RequestParam用于接收ur1地址传参或表单传参<br>■@RequestBody用于接收json数据<br>■@PathVariable用于接收路径参数， 使用{参数名称}描述路径参数<br>●应用<br>■后期开发中，发送请求参数超过1个时，以json格式为主, @RequestBody应用较广<br>■如果发送非j son格式数据,选用@RequestParam接收请求参数<br>■采用RESTfu1进行开发，当参数数量较少时，例如1个， 可以采用@PathVariable接收请求路径变量,通常用于传递id值</p>
+                <p> 停止下拉刷新的效果<br>当处理完下拉刷新后，下拉刷新的loading效果会一直 显示，不会主动消失，所以需要手动隐<br>loading效果。此时，调用wx.stopPullDownRefresh()可以停止当前页面的下拉刷新</p>
+<p>上拉触底是移动端的专有名词，通过手指在屏幕上的上拉滑动操作，从而加载更多数据的行为。<br>监听页面的上拉触底事件<br>在页面的.js文件中，通过onReachBottom()函数即可监听当前页面的.上拉触底事件。</p>
+<p>配置上拉触底距离<br>上拉触底距离指的是触发上拉触底事件时，滚动条距离页面底部的距离。<br>可以在全局或页面的.json 配置文件中，通过onReachBottomDistance属性来配置.上拉触底的距离。<br>小程序默认的触底距离是50px,在实际开发中,可以根据自己的需求修改这个默认值。</p>
+<p>添加loading提示效果</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><code class="hljs java">getcolors() &#123;<br>    wx.showLoading(&#123;<br>      title: <span class="hljs-string">&#x27;数据加载中...&#x27;</span>,<br>    &#125;)<br>    wx.request(&#123;<br>      url: <span class="hljs-string">&#x27;http://www.escook.cn/api/color&#x27;</span>,<br>      method: <span class="hljs-string">&#x27;GET&#x27;</span>,<br>      success: (&#123;<br>        data: res<br>      &#125;) =&gt; &#123;<br>        <span class="hljs-built_in">this</span>.setData(&#123;<br>          colorList: [...<span class="hljs-built_in">this</span>.data.colorList, ...res.data]<br>        &#125;)<br>      &#125;,<br>      complete: () =&gt; &#123;<br>        wx.hideLoading(&#123;&#125;)<br>      &#125;<br>    &#125;)<br></code></pre></td></tr></table></figure>
+<p>对上拉触底进行节流处理<br>①在data中定义isloading节流阀<br>false 表示当前没有进行任何数据请求<br>true 表示当前正在进行数据请求<br>②在getColors()方法中修改isloading节流阀的值<br>在刚调用getColors时将节流阀设置true<br>在网络请求的complete回调函数中,将节流阀重置为false<br>③在onReachBottom中判断节流阀的值，从而对数据请求进行节流控制<br>如果节流阀的值为true,则阻止当前请求<br>如果节流阀的值为false,则发起数据请求</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-comment">//先定义isloding</span><br>  data: &#123;<br>    isloding: <span class="hljs-literal">false</span><br>  &#125;,<br><span class="hljs-comment">//在需要判定时先改为true</span><br><span class="hljs-built_in">this</span>.setData(&#123;<br>      isloding: <span class="hljs-literal">true</span><br>    &#125;)<br><span class="hljs-comment">//判定结束重新改回isloding的值</span><br>complete: () =&gt; &#123;<br>        wx.hideLoading(&#123;&#125;)<br>        <span class="hljs-built_in">this</span>.setData(&#123;<br>          isloding: <span class="hljs-literal">false</span><br>        &#125;)<br></code></pre></td></tr></table></figure>
+
+<p>自定义编译模式，添加自定义编译模式</p>
+<p>生命周期(Life Cycle)是指一一个对象从创建-&gt;运行-&gt;销毁的整个阶段，强调的是一个时间段。例如:我们可以把每个小程序运行的过程，也概括为生命周期:<br>●小程序的启动,表示生命周期的开始<br>●小程序的关闭，表示生命周期的结束<br>●中间小程序运行的过程，就是小程序的生命周期<br>生命周期的分类<br>在小程序中，生命周期分为两类，分别是:<br>①应用生命周期<br>●特指小程序从启动-&gt;运行-&gt;销毁的过程<br>②页面生命周期<br>●特指小程序中，每个页面的加载-&gt;渲染-&gt;销毁的过程</p>
+<p>其中，页面的生命周期范围较小，应用程序的生命周期范围较大，如图所示:<img src="https://img-blog.csdnimg.cn/20363c6ea05f41f8ad7c310f7182fd4e.png" srcset="/img/loading.gif" lazyload alt="在这里插入图片描述">生命周期函数:是由小程序框架提供的内置函数,会伴随着生命周期，自动按次序执行。<br>生命周期函数的作用:允许程序员在特定的时间点，执行某些特定的操作。例如，页面刚加载的时候，可以在onLoad生命周期函数中初始化页面的数据<br>生命周期函数的分类<br>小程序中的生命周期函数分为两类，分别是:<br>①应用的生命 周期函数<br>●特指小程序从启动-&gt;运行-&gt;销毁期间依次调用的那些函数<br>②页面的生命 周期函数<br>●特指小程序中，每个页面从加载-&gt;渲染-&gt;销毁期间依次调用的那些函数</p>
+<p>应用的生命周期函数<br>小程序的应用生命周期函数需要在app.js中进行声明</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><code class="hljs java">App(&#123;<br><br>  <span class="hljs-comment">/**</span><br><span class="hljs-comment">   * 当小程序初始化完成时，会触发 onLaunch（全局只触发一次）</span><br><span class="hljs-comment">   */</span><br>  onLaunch: function () &#123;<br>    <br>  &#125;,<br><br>  <span class="hljs-comment">/**</span><br><span class="hljs-comment">   * 当小程序启动，或从后台进入前台显示，会触发 onShow</span><br><span class="hljs-comment">   */</span><br>  onShow: function (options) &#123;<br>    <br>  &#125;,<br><br>  <span class="hljs-comment">/**</span><br><span class="hljs-comment">   * 当小程序从前台进入后台，会触发 onHide</span><br><span class="hljs-comment">   */</span><br>  onHide: function () &#123;<br>    <br>  &#125;,<br><br>  <span class="hljs-comment">/**</span><br><span class="hljs-comment">   * 当小程序发生脚本错误，或者 api 调用失败时，会触发 onError 并带上错误信息</span><br><span class="hljs-comment">   */</span><br>  onError: function (msg) &#123;<br>    <br>  &#125;<br>&#125;)<br></code></pre></td></tr></table></figure>
+<p>页面的生命周期函数<br>小程序的页面生命周期函数需要在页面的.js文件中进行声明</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br></pre></td><td class="code"><pre><code class="hljs java">Page(&#123;<br><br>  <span class="hljs-comment">/**</span><br><span class="hljs-comment">   * 页面的初始数据</span><br><span class="hljs-comment">   */</span><br>  data: &#123;<br><br>  &#125;,<br><br>  <span class="hljs-comment">/**</span><br><span class="hljs-comment">   * 生命周期函数--监听页面加载</span><br><span class="hljs-comment">   */</span><br>  onLoad(options) &#123;<br><br>  &#125;,<br><br>  <span class="hljs-comment">/**</span><br><span class="hljs-comment">   * 生命周期函数--监听页面初次渲染完成</span><br><span class="hljs-comment">   */</span><br>  onReady() &#123;<br><br>  &#125;,<br><br>  <span class="hljs-comment">/**</span><br><span class="hljs-comment">   * 生命周期函数--监听页面显示</span><br><span class="hljs-comment">   */</span><br>  onShow() &#123;<br><br>  &#125;,<br><br>  <span class="hljs-comment">/**</span><br><span class="hljs-comment">   * 生命周期函数--监听页面隐藏</span><br><span class="hljs-comment">   */</span><br>  onHide() &#123;<br><br>  &#125;,<br><br>  <span class="hljs-comment">/**</span><br><span class="hljs-comment">   * 生命周期函数--监听页面卸载</span><br><span class="hljs-comment">   */</span><br>  onUnload() &#123;<br><br>  &#125;,<br><br>  <span class="hljs-comment">/**</span><br><span class="hljs-comment">   * 页面相关事件处理函数--监听用户下拉动作</span><br><span class="hljs-comment">   */</span><br>  onPullDownRefresh() &#123;<br><br>  &#125;,<br><br>  <span class="hljs-comment">/**</span><br><span class="hljs-comment">   * 页面上拉触底事件的处理函数</span><br><span class="hljs-comment">   */</span><br>  onReachBottom() &#123;<br><br>  &#125;,<br><br>  <span class="hljs-comment">/**</span><br><span class="hljs-comment">   * 用户点击右上角分享</span><br><span class="hljs-comment">   */</span><br>  onShareAppMessage() &#123;<br><br>  &#125;<br>&#125;)<br></code></pre></td></tr></table></figure>
+<p>WXS (WeiXin Script)是小程序独有的一套脚本语言,结合WXML,可以构建出页面的结构。<br>wxs的应用场景<br>wxml中无法调用在页面的js中定义的函数,但是, wxml中可以调用WXS中定义的函数。因此，小程序中<br>wxs的典型应用场景就是“过滤器”</p>
+<p>wxs和JavaScript的关系*<br>虽然WXS的语法类似于JavaScript,但是WXS和JavaScript是完全不同的两种语言:<br>①wXS 有自己的数据类型<br>number数值类型、string 字符串类型、boolean布尔类型、object 对象类型、<br>function 函数类型、array 数组类型、date 日期类型、<br>regexp正则<br>②wxs 不支持类似于ES6及以上的语法形式<br>不支持: let、 const、 解构赋值、展开运算符、箭头函数、对象属性简写、etc…<br>支持: var定义变量、普通function函数等类似于ES5的语法<br>③WXS 遵循CommonJS规范<br>module对象<br>require() 函数<br>module.exports对象</p>
 
                 
               </div>
@@ -300,7 +310,7 @@
   <div class="license-box my-3">
     <div class="license-title">
       <div></div>
-      <div>http://example.com/2023/03/24/我的第一篇博客文章/</div>
+      <div>http://example.com/2023/03/25/微信小程序day07/</div>
     </div>
     <div class="license-meta">
       
@@ -312,7 +322,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2023年3月24日</div>
+          <div>2023年3月25日</div>
         </div>
       
       
@@ -344,7 +354,7 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2023/03/25/SpringMVC04/" title="">
+                      <a href="/2023/03/25/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8Fday06/" title="">
                         <i class="iconfont icon-arrowleft"></i>
                         <span class="hidden-mobile"></span>
                         <span class="visible-mobile">上一篇</span>
@@ -354,8 +364,8 @@
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2023/03/23/hello-world/" title="Hello World">
-                        <span class="hidden-mobile">Hello World</span>
+                      <a href="/2023/03/25/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8Fday08/" title="">
+                        <span class="hidden-mobile"></span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>

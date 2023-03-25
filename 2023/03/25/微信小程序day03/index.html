@@ -16,22 +16,17 @@
   <meta name="author" content="John Doe">
   <meta name="keywords" content="">
   
-    <meta name="description" content="title: 我的第一篇博客文章date: 2023-03-24 00:31:40tags:REST风格REST简介●REST (Representational State Transfer) ， 表现形式状态转换■传统风格资源描述形式    http:&#x2F;&#x2F;localhost&#x2F;user&#x2F; getById?id&#x3D;1    http:&#x2F;&#x2F;localhost&#x2F;user&#x2F; saveUser■">
+    <meta name="description" content="bindinput的语法格式在小程序中，通过input事件来响应文本框的输入事件，语法格式如下:①通过bindinput,可以为文本框绑定输入事件:&lt;input bindinput&#x3D; ”inputHandler”&gt;②在页面的js文件中定义事件处理函数:inputHandler(e) {	&#x2F;&#x2F; e.detail.value 是变化过后，文本框最新的值cons">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/2023/03/24/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/index.html">
+<meta property="og:url" content="http://example.com/2023/03/25/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8Fday03/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="title: 我的第一篇博客文章date: 2023-03-24 00:31:40tags:REST风格REST简介●REST (Representational State Transfer) ， 表现形式状态转换■传统风格资源描述形式    http:&#x2F;&#x2F;localhost&#x2F;user&#x2F; getById?id&#x3D;1    http:&#x2F;&#x2F;localhost&#x2F;user&#x2F; saveUser■">
+<meta property="og:description" content="bindinput的语法格式在小程序中，通过input事件来响应文本框的输入事件，语法格式如下:①通过bindinput,可以为文本框绑定输入事件:&lt;input bindinput&#x3D; ”inputHandler”&gt;②在页面的js文件中定义事件处理函数:inputHandler(e) {	&#x2F;&#x2F; e.detail.value 是变化过后，文本框最新的值cons">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/2ac44b37a73646a3a0cbf20487d7ab19.png">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/08cfae0b07ce4675965fbe3728e3b02f.png">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/e8ea757469294615ba3e30f1d947eb3f.png">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/87f0e3c550404d9683292df490b67901.png">
-<meta property="article:published_time" content="2023-03-23T16:31:40.196Z">
-<meta property="article:modified_time" content="2023-03-24T07:06:14.734Z">
+<meta property="article:published_time" content="2023-03-25T06:14:20.686Z">
+<meta property="article:modified_time" content="2023-03-24T22:13:18.000Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://img-blog.csdnimg.cn/2ac44b37a73646a3a0cbf20487d7ab19.png">
   
   
   
@@ -212,8 +207,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2023-03-24 00:31" pubdate>
-          2023年3月24日 凌晨
+        <time datetime="2023-03-25 14:14" pubdate>
+          2023年3月25日 下午
         </time>
       </span>
     
@@ -224,7 +219,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          818 字
+          1.3k 字
         
       </span>
     
@@ -235,7 +230,7 @@
         
         
         
-          7 分钟
+          11 分钟
         
       </span>
     
@@ -278,10 +273,17 @@
             
               <div class="markdown-body">
                 
-                <hr>
-<p>title: 我的第一篇博客文章<br>date: 2023-03-24 00:31:40<br>tags:<br><strong>REST风格</strong><br>REST简介<br>●REST (Representational State Transfer) ， 表现形式状态转换<br>■传统风格资源描述形式<br>    <a target="_blank" rel="noopener" href="http://localhost/user/">http://localhost/user/</a> getById?id&#x3D;1<br>    <a target="_blank" rel="noopener" href="http://localhost/user/">http://localhost/user/</a> saveUser<br>■REST风格描述形式<br>    <a target="_blank" rel="noopener" href="http://localhost/user/1">http://localhost/user/1</a><br>    <a target="_blank" rel="noopener" href="http://localhost/user">http://localhost/user</a><br>●优点:<br>    ■隐藏资源的访问行为， 无法通过地址得知对资源是何种操作<br>    ■书写简化</p>
-<p>●按照REST风格访问资源时使用行为动作区分对资源进行 了何种操作<br>    ■ <a target="_blank" rel="noopener" href="http://localhost/users">http://localhost/users</a>	查询全部用户信息	GET (查询)<br>    ■<a target="_blank" rel="noopener" href="http://localhost/users/1">http://localhost/users/1</a>	查询指定用户信息	GET (查询)<br>    ■<a target="_blank" rel="noopener" href="http://localhost/users">http://localhost/users</a>	添加用户信息	POST (新增&#x2F;保存)<br>    ■<a target="_blank" rel="noopener" href="http://localhost/users">http://localhost/users</a>	修改用户信息	PUT (修改&#x2F;更新)<br>    ■<a target="_blank" rel="noopener" href="http://localhost/users/1">http://localhost/users/1</a>	删除用户信息	DELETE (删除)<br>●根据REST风格对资源进行访问称为RESTful</p>
-<p>步骤:<br><img src="https://img-blog.csdnimg.cn/2ac44b37a73646a3a0cbf20487d7ab19.png" srcset="/img/loading.gif" lazyload alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/08cfae0b07ce4675965fbe3728e3b02f.png" srcset="/img/loading.gif" lazyload alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/e8ea757469294615ba3e30f1d947eb3f.png" srcset="/img/loading.gif" lazyload alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/87f0e3c550404d9683292df490b67901.png" srcset="/img/loading.gif" lazyload alt="在这里插入图片描述"><br>@RequestBody 		@RequestParam 		@PathVariable<br>●区别<br>■@RequestParam用于接收ur1地址传参或表单传参<br>■@RequestBody用于接收json数据<br>■@PathVariable用于接收路径参数， 使用{参数名称}描述路径参数<br>●应用<br>■后期开发中，发送请求参数超过1个时，以json格式为主, @RequestBody应用较广<br>■如果发送非j son格式数据,选用@RequestParam接收请求参数<br>■采用RESTfu1进行开发，当参数数量较少时，例如1个， 可以采用@PathVariable接收请求路径变量,通常用于传递id值</p>
+                <p>bindinput的语法格式<br>在小程序中，通过input事件来响应文本框的输入事件，语法格式如下:<br>①通过bindinput,可以为文本框绑定输入事件:<br>&lt;input bindinput&#x3D; ”inputHandler”&gt;<input><br>②在页面的js文件中定义事件处理函数:<br>inputHandler(e) {	&#x2F;&#x2F; e.detail.value 是变化过后，文本框最新的值<br>console. log(e.detail.value)<br>}</p>
+<p>实现文本框和data之间的数据同步<br>实现步骤:<br>①定义数据<br>②渲染结构<br>③美化样式<br>④绑定input事件处理函数</p>
+<p>wx:if<br>在小程序中，使用wx:if&#x3D;”{condition}}”来判断是否需要渲染该代码块:<br> <view wx:if=""> True </view><br>也可以用wx:elif和Wx:else来添加else判断:<br><view wx:if="false"> 男</view><br><view wx:elif="false"> 女</view><br>&lt;view wx:elsex 保密</view></p>
+<p>结合<block>使用wx:if<br>如果要一次性控制多个组件的展示与隐藏，可以使用-个<block></block>标签将多个组件包装起来，并在<br><block>标签上使用wx:if控制属性，示例如下:<br><block wx:if="true"><br><view> view1 </view><br><view> view2 </view><br></block><br><block> 并不是一个组件, 它只是一个包裹性质的容器， 不会在页面中做任何渲染。</p>
+<p>hidden<br>在小程序中，直接使用hidden&#x3D;”“也能控制元素的显示与隐藏:<br><view hidden=""> 条件为true隐藏，条件为false 显示</view></p>
+<p>wx:if与hidden的对比<br>①运行方式不同<br>wx:if 以动态创建和移除元素的方式，控制元素的展示与隐藏<br>hidden 以切换样式的方式(display: none&#x2F;block;)，控制元素的显示与隐藏<br>②使用建议<br>频繁切换时， 建议使用hidden<br>控制条件复 杂时,建议使用wx:if搭配wx:elif、wx:else 进行展示与隐藏的切换</p>
+<p>wx:for<br>通过wx:for可以根据指定的数组,循环渲染重复的组件结构，语法示例如下:<br><view wx:for=""><br>索引是:  当前项是: <br></view><br>默认情况下，当前循环项的索引用index表示;当前循环项用item表示。</p>
+<p>wx:key的使用<br>类似于Vue列表渲染中的:key,小程序在实现列表渲染时，也建议为渲染出来的列表项指定唯一的key值,<br>从而提高渲染的效率，示例代码如下:<br>&#x2F;&#x2F; data数据<br>data:<br>userL ist: [<br>{ id: 1, name: ‘小红’ },<br>{ id: 2, name: ‘小黄’ },<br>{ id: 3, name: ‘小白’ }<br>]<br>}<br>&#x2F;&#x2F; wxml 结构<br><view wx:for=" " wx:key=" id"></view></p>
+<p>WXSS和CsS的关系，<br>WXSS具有CSS大部分特性，同时，WXSS还对CSS进行了扩充以及修改，以适应微信小程序的开发。<br>与CSS相比，WXSS扩展的特性有:<br>rpx尺寸单位<br>@import样式导入</p>
+<p>rpx的实现原理非常简单:鉴于不同设备屏幕的大小不同，为了实现屏幕的自动适配，rpx把所有设备的屏幕,在宽度上等分为750份(即:当前屏幕的总宽度为750rpx)。在较小的设备上，1rpx 所代表的宽度较小，在较大的设备上， 1rpx所代表的宽度较大，小程序在不同设备上运行的时候，会自动把rpx的样式单位换算成对应的像素单位来渲染,从而实现屏幕适配。</p>
+<p>@import的语法格式<br>@import后跟需要导入的外联样式表的相对路径，用;表示语句结束</p>
 
                 
               </div>
@@ -300,7 +302,7 @@
   <div class="license-box my-3">
     <div class="license-title">
       <div></div>
-      <div>http://example.com/2023/03/24/我的第一篇博客文章/</div>
+      <div>http://example.com/2023/03/25/微信小程序day03/</div>
     </div>
     <div class="license-meta">
       
@@ -312,7 +314,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2023年3月24日</div>
+          <div>2023年3月25日</div>
         </div>
       
       
@@ -344,7 +346,7 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2023/03/25/SpringMVC04/" title="">
+                      <a href="/2023/03/25/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%AC%94%E8%AE%B0/" title="">
                         <i class="iconfont icon-arrowleft"></i>
                         <span class="hidden-mobile"></span>
                         <span class="visible-mobile">上一篇</span>
@@ -354,8 +356,8 @@
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2023/03/23/hello-world/" title="Hello World">
-                        <span class="hidden-mobile">Hello World</span>
+                      <a href="/2023/03/25/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8Fday05/" title="">
+                        <span class="hidden-mobile"></span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
