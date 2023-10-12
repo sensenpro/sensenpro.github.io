@@ -16,21 +16,21 @@
   <meta name="author" content="阿森">
   <meta name="keywords" content="">
   
-    <meta name="description" content="![]">
+    <meta name="description" content="数通技术高级01）TCP&#x2F;IP详解 1.请写出几个常用的应用层的协议并标明其基于的传输层协议及其端口号。2.TCP报文头部中，哪些字段与建立连接和断开连接有关请写出来，并标明每个字段的作用。3.请简单描述TCP断开连接的过程。4.在TCP头部字段中，窗口的大小由谁来决定。5.请简单描述TCP与UDP的区别6.请写出IP头部字段中每个字段的名称及其大致的作用7.ICMP、TCP、UDP分别">
 <meta property="og:type" content="article">
-<meta property="og:title" content="我的第一篇博客文章">
-<meta property="og:url" content="https://sensenpro.github.io/2023/03/24/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/index.html">
+<meta property="og:title" content="sensenproのHexo">
+<meta property="og:url" content="https://sensenpro.github.io/2023/10/12/Typora%20-%20%E5%89%AF%E6%9C%AC/%E7%AC%94%E8%AE%B0/01%E6%95%B0%E9%80%9A%E6%8A%80%E6%9C%AF%E9%AB%98%E7%BA%A7/%E5%8F%82%E8%80%83%E7%AD%94%E6%A1%88%E6%95%B0%E9%80%9A%E6%8A%80%E6%9C%AF%E9%AB%98%E7%BA%A7/index.html">
 <meta property="og:site_name" content="sensenproのHexo">
-<meta property="og:description" content="![]">
+<meta property="og:description" content="数通技术高级01）TCP&#x2F;IP详解 1.请写出几个常用的应用层的协议并标明其基于的传输层协议及其端口号。2.TCP报文头部中，哪些字段与建立连接和断开连接有关请写出来，并标明每个字段的作用。3.请简单描述TCP断开连接的过程。4.在TCP头部字段中，窗口的大小由谁来决定。5.请简单描述TCP与UDP的区别6.请写出IP头部字段中每个字段的名称及其大致的作用7.ICMP、TCP、UDP分别">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2023-03-23T16:31:40.196Z">
-<meta property="article:modified_time" content="2023-03-29T13:12:53.084Z">
+<meta property="article:published_time" content="2023-10-12T06:47:20.626Z">
+<meta property="article:modified_time" content="2023-09-27T08:59:40.708Z">
 <meta property="article:author" content="阿森">
 <meta name="twitter:card" content="summary_large_image">
   
   
   
-  <title>我的第一篇博客文章 - sensenproのHexo</title>
+  <title>sensenproのHexo</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -197,7 +197,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="我的第一篇博客文章"></span>
+            <span id="subtitle" data-typed-text=""></span>
           
         </div>
 
@@ -208,8 +208,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2023-03-24 00:31" pubdate>
-          2023年3月24日 凌晨
+        <time datetime="2023-10-12 14:47" pubdate>
+          2023年10月12日 下午
         </time>
       </span>
     
@@ -220,7 +220,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          3 字
+          2.6k 字
         
       </span>
     
@@ -231,7 +231,7 @@
         
         
         
-          1 分钟
+          22 分钟
         
       </span>
     
@@ -269,12 +269,36 @@
         <div id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">我的第一篇博客文章</h1>
+            <h1 style="display: none"></h1>
             
             
               <div class="markdown-body">
                 
-                <p>![]</p>
+                <h1 id="数通技术高级"><a href="#数通技术高级" class="headerlink" title="数通技术高级"></a>数通技术高级</h1><p>01）TCP&#x2F;IP详解</p>
+<p>1.请写出几个常用的应用层的协议并标明其基于的传输层协议及其端口号。<br>2.TCP报文头部中，哪些字段与建立连接和断开连接有关请写出来，并标明每个字段的作用。<br>3.请简单描述TCP断开连接的过程。<br>4.在TCP头部字段中，窗口的大小由谁来决定。<br>5.请简单描述TCP与UDP的区别<br>6.请写出IP头部字段中每个字段的名称及其大致的作用<br>7.ICMP、TCP、UDP分别对应的网络层的协议号分别是多少？<br>8.请简述一下tracert的大致工作原理。<br>9.tracert与traceroute的区别是什么。<br>10.常用的故障诊断命令有哪些。<br>11.请简单描述单核心三层结构的数据通信流程。</p>
+<p>02）OSPF基础</p>
+<p>1.动态路由协议按照工作区域如何分类，按照工作机制和算法如何分类。<br>2.基于距离矢量的路由协议与基于链路状态的路由协议有什么区别？<br>3.OSPF的中文全称是什么，其基于的协议类型和协议号分别是多少？<br>4.什么是Router-Id,如何产生？<br>5.OSPF协议的五种协议报文分别是什么，大致作用是什么？<br>6.OSPF协议中的三张表是什么？<br>7.OSPF接口的Cost值如何计算，一条ospf路由的cost值如何计算？<br>8.OSPF协议的状态机有几种，分别是什么？<br>9.请简单描述OSPF协议临接关系建立的大致过程及交互的报文<br>10.OSPF协议支持的网络类型有哪些，哪些需要选举DR和BDR？<br>11.DR和BDR如何选举？<br>12.为什么要划分区域？<br>13.OSPF路由器的角色有哪几种？</p>
+<p>03）OSPF路由计算</p>
+<p>1.OSPF协议LSA头部都包含哪些字段，在这些字段中哪些字段用来唯一的标识一个LSA，哪些字段用于判断LSA的新旧。<br>2.OSPF的LSA一共有几种类型，分别是什么，每种LSA分别都由谁产生，泛洪的范围又是什么？<br>3.Router LSA中的link-type有几种类型，分别是什么，各自对应的link id及link data的含义又分别是什么？<br>4.一类LSA和二类LSA中的LSID代表的含义一样吗，分别是什么？<br>5.区域内的拓扑和网段信息可以通过哪些LSA生成？<br>6.区域间传递的LSA是哪一类？OSPF如何避免区域间路由环路？<br>7.虚连接的作用是什么，配置的前提条件是什么？<br>8.OSPF外部路由引入时需要用到哪种LSA，外部路由引入的度量值有几种，分别是什么，计算方法上有什么区别？<br>9.OSPF路由优先级的顺序是如何排序的。</p>
+<p>04）OSPF特殊区域</p>
+<p>1.OSPF的特殊区域包括哪些？<br>2.stub区域与totally stub区域的区别是什么？<br>3.nssa区域与totally nssa区域的区别是什么?<br>4.OSPF路由汇总的类型包括哪些？区域间路由汇总功能在什么路由器上配置？<br>5.OSPF报文认证的方式有几种，分别是什么？</p>
+<p>05）生成树原理与配置</p>
+<p>1.请简单描述园区交换网络中二层环路产生的原因及危害。<br>2.生成树协议的作用是什么？<br>3.请简单描述STP生成树协议的大致工作原理。<br>4.STP生成树协议中根桥如何选举，根桥是否可以抢占？<br>5.什么是BPDU，STP的BPDU分为哪几种？<br>6.STP的转发延时、最大寿命及BPDU的发送间隔分别是多少，STP的角色分为几种，分别是什么？<br>7.请简述根端口的选举过程。<br>8.请简述指定接口的选举过程。<br>9.STP的状态分为几种，分别是什么，各种状态下对于数据都是如何处理的？<br>10.STP根桥故障恢复时间是多长，直连链路故障的恢复时间是多长？<br>11.RSTP与STP相比有哪些变化？</p>
+<p>06）MSTP原理与配置</p>
+<p>1.RSTP和STP有哪些不足，MSTP是如何解决这些不足的？<br>2.请解释以下名词代表的含义：MSTI、CST、IST、CIST、SST。<br>3.MSTP的端口角色和状态包括哪些。<br>4.请简述MSTP的配置步骤。</p>
+<p>07）VRRP原理与配置</p>
+<p>1.什么是VRRP，请简述其工作原理。<br>2.VRRP一般在什么场景下使用，VRRP的报文采用什么方式发送，发送的目的地址又是多少。<br>3.请简单描述VRRP主备选举的过程。<br>4.VRRP定义的定时器有哪些，这些定时器的作用分别是什么？<br>5.VRRP协议的三种状态分别是什么，这三种状态之间如何进行切换。<br>6.请简述VRRP抢占模式和非抢占模式的区别。<br>7.请简述VRRP的配置步骤。</p>
+<p>08）交换机高级特性</p>
+<p>1.什么是链路聚合，链路聚合的作用有哪些？<br>2.链路聚合的方式有哪些，两种方式的区别是什么？<br>3.LACP模式下如何选举主动端和活动接口？<br>4.堆叠和集群的相同点和不同点分别是什么？<br>5.基于包和基于流的负载分担有什么区别？</p>
+<p>09）网络服务与应用</p>
+<p>1.FTP可以采用的传输模式有哪些，这两种传输模式有什么区别？<br>2.请简述FTP被动模式的工作过程。<br>3.请简述FTP主动模式的工作过程。<br>4.什么是DNS，DNS的查询方式有哪些，区别是什么？</p>
+<p>10）DHCP原理与配置</p>
+<p>1.DHCP的中文全称是什么，其协议报文是基于什么方式进行交互的，其端口号是多少？<br>2.DHCP中的协议报文都有哪些，请写出来。<br>3.请简答描述DHCP的大致工作原理。<br>4.请简单描述DHCP地址续租的大致过程。<br>5.请简单描述DHCP的配置步骤。<br>6.请简单描述DHCP relay的大致工作原理。<br>7.请简单描述DHCP relay的大致配置步骤。<br>8.针对DHCP的攻击主要有哪几种，如何进行解决。</p>
+<p>11）策略路由</p>
+<p>1.PBR是什么，PBR语句中节点与节点之间是什么关系，节点中的语句之间又是什么关系。<br>2.请根据自己的理解简单描述一下路由策略与策略路由的区别。<br>3.PBR的两种分类方式分别是什么，这两种分类方式有什么区别。<br>4.请简单描述PBR的大致配置步骤。</p>
+<p>12）IPv6基础</p>
+<p>1.IPV6与IPV4相比有哪些优势，请简单描述。<br>2.IPV6的地址长度是多少，如何表示，其基本包头长度为多少个字节。<br>3.IPV6的基本包头都有哪些字段构成，请写出来。<br>4.请简述IPV6报文处理的大致过程。<br>5.IPV6地址分为哪几类，其地址构成由哪两部分构成。<br>6.请简述IPV6主机无状态地址自动配置的过程。<br>7.请简单描述被请求节点组播地址的作用，其有效范围是什么。<br>8.NDP协议主要使用了ICMPV6中的哪些报文，请列举出来。<br>9.IPV6中无状态地址获取用到了ICMPV6中的哪几个报文，地址冲突又用到了ICMPV6中的哪个报文。<br>10.IPV6使用什么来取代IPV4中的ARP地址解析功能。</p>
+<p>13）园区网典型组网架构</p>
 
                 
               </div>
@@ -292,8 +316,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>我的第一篇博客文章</div>
-      <div>https://sensenpro.github.io/2023/03/24/我的第一篇博客文章/</div>
+      <div></div>
+      <div>https://sensenpro.github.io/2023/10/12/Typora - 副本/笔记/01数通技术高级/参考答案数通技术高级/</div>
     </div>
     <div class="license-meta">
       
@@ -305,7 +329,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2023年3月24日</div>
+          <div>2023年10月12日</div>
         </div>
       
       
@@ -337,7 +361,7 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2023/10/12/Typora%20-%20%E5%89%AF%E6%9C%AC/%E7%AC%94%E8%AE%B0/00%E6%95%B0%E9%80%9A%E6%8A%80%E6%9C%AF%E5%9F%BA%E7%A1%80/10%20%E7%BD%91%E7%BB%9C%E5%9C%B0%E5%9D%80%E8%BD%AC%E6%8D%A2/" title="">
+                      <a href="/2023/10/12/Typora%20-%20%E5%89%AF%E6%9C%AC/%E7%AC%94%E8%AE%B0/01%E6%95%B0%E9%80%9A%E6%8A%80%E6%9C%AF%E9%AB%98%E7%BA%A7/%E6%88%91%E7%9A%84%E6%95%B0%E9%80%9A%E6%8A%80%E6%9C%AF%E9%AB%98%E7%BA%A7/" title="">
                         <i class="iconfont icon-arrowleft"></i>
                         <span class="hidden-mobile"></span>
                         <span class="visible-mobile">上一篇</span>
@@ -347,8 +371,8 @@
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2023/03/23/hello-world/" title="Hello World">
-                        <span class="hidden-mobile">Hello World</span>
+                      <a href="/2023/10/12/Typora%20-%20%E5%89%AF%E6%9C%AC/%E7%AC%94%E8%AE%B0/00%E6%95%B0%E9%80%9A%E6%8A%80%E6%9C%AF%E5%9F%BA%E7%A1%80/%E6%88%91%E7%9A%84%E6%95%B0%E9%80%9A%E5%9F%BA%E7%A1%80%E7%AC%94%E8%AE%B0/" title="">
+                        <span class="hidden-mobile"></span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>

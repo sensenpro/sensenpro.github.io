@@ -16,21 +16,23 @@
   <meta name="author" content="阿森">
   <meta name="keywords" content="">
   
-    <meta name="description" content="![]">
+    <meta name="description" content="6 以太网交换基础重点CSMA&#x2F;CD(载波监听多路访问&#x2F;冲突检测)多址接入MA  多个站连接在一条总线上，竞争使用总线  载波监听CS 每一个站在发送帧之前先要检测一下总线上是否有其他站点在发送帧（先听后说）：1.若检测到总线空闲 96 比特时间，则发送这个帧2.若检测到总线忙，则继续检测并等待总线转为空闲 96 比特时间，然后发送这个帧96 比特时间 是指发送 96 比特所耗">
 <meta property="og:type" content="article">
-<meta property="og:title" content="我的第一篇博客文章">
-<meta property="og:url" content="https://sensenpro.github.io/2023/03/24/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/index.html">
+<meta property="og:title" content="sensenproのHexo">
+<meta property="og:url" content="https://sensenpro.github.io/2023/10/12/Typora%20-%20%E5%89%AF%E6%9C%AC/%E7%AC%94%E8%AE%B0/00%E6%95%B0%E9%80%9A%E6%8A%80%E6%9C%AF%E5%9F%BA%E7%A1%80/6%20%E4%BB%A5%E5%A4%AA%E7%BD%91%E4%BA%A4%E6%8D%A2%E5%9F%BA%E7%A1%80%E9%87%8D%E7%82%B9/index.html">
 <meta property="og:site_name" content="sensenproのHexo">
-<meta property="og:description" content="![]">
+<meta property="og:description" content="6 以太网交换基础重点CSMA&#x2F;CD(载波监听多路访问&#x2F;冲突检测)多址接入MA  多个站连接在一条总线上，竞争使用总线  载波监听CS 每一个站在发送帧之前先要检测一下总线上是否有其他站点在发送帧（先听后说）：1.若检测到总线空闲 96 比特时间，则发送这个帧2.若检测到总线忙，则继续检测并等待总线转为空闲 96 比特时间，然后发送这个帧96 比特时间 是指发送 96 比特所耗">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2023-03-23T16:31:40.196Z">
-<meta property="article:modified_time" content="2023-03-29T13:12:53.084Z">
+<meta property="og:image" content="https://sensenpro.github.io/2023/10/12/Typora%20-%20%E5%89%AF%E6%9C%AC/%E7%AC%94%E8%AE%B0/00%E6%95%B0%E9%80%9A%E6%8A%80%E6%9C%AF%E5%9F%BA%E7%A1%80/6%20%E4%BB%A5%E5%A4%AA%E7%BD%91%E4%BA%A4%E6%8D%A2%E5%9F%BA%E7%A1%80%E9%87%8D%E7%82%B9/Users/%E8%83%A1%E6%A1%83/AppData/Roaming/Typora/typora-user-images/image-20230926200251101.png">
+<meta property="article:published_time" content="2023-10-12T06:47:20.589Z">
+<meta property="article:modified_time" content="2023-09-26T12:06:25.775Z">
 <meta property="article:author" content="阿森">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://sensenpro.github.io/2023/10/12/Typora%20-%20%E5%89%AF%E6%9C%AC/%E7%AC%94%E8%AE%B0/00%E6%95%B0%E9%80%9A%E6%8A%80%E6%9C%AF%E5%9F%BA%E7%A1%80/6%20%E4%BB%A5%E5%A4%AA%E7%BD%91%E4%BA%A4%E6%8D%A2%E5%9F%BA%E7%A1%80%E9%87%8D%E7%82%B9/Users/%E8%83%A1%E6%A1%83/AppData/Roaming/Typora/typora-user-images/image-20230926200251101.png">
   
   
   
-  <title>我的第一篇博客文章 - sensenproのHexo</title>
+  <title>sensenproのHexo</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -197,7 +199,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="我的第一篇博客文章"></span>
+            <span id="subtitle" data-typed-text=""></span>
           
         </div>
 
@@ -208,8 +210,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2023-03-24 00:31" pubdate>
-          2023年3月24日 凌晨
+        <time datetime="2023-10-12 14:47" pubdate>
+          2023年10月12日 下午
         </time>
       </span>
     
@@ -220,7 +222,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          3 字
+          1.5k 字
         
       </span>
     
@@ -231,7 +233,7 @@
         
         
         
-          1 分钟
+          13 分钟
         
       </span>
     
@@ -269,12 +271,52 @@
         <div id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">我的第一篇博客文章</h1>
+            <h1 style="display: none"></h1>
             
             
               <div class="markdown-body">
                 
-                <p>![]</p>
+                <h1 id="6-以太网交换基础重点"><a href="#6-以太网交换基础重点" class="headerlink" title="6 以太网交换基础重点"></a>6 以太网交换基础重点</h1><h2 id="CSMA-x2F-CD-载波监听多路访问-x2F-冲突检测"><a href="#CSMA-x2F-CD-载波监听多路访问-x2F-冲突检测" class="headerlink" title="CSMA&#x2F;CD(载波监听多路访问&#x2F;冲突检测)"></a>CSMA&#x2F;CD(载波监听多路访问&#x2F;冲突检测)</h2><p><strong>多址接入MA</strong></p>
+<ul>
+<li>多个站连接在一条总线上，竞争使用总线</li>
+</ul>
+<p><strong>载波监听CS</strong></p>
+<p>每一个站在发送帧之前先要检测一下总线上是否有其他站点在发送帧（先听后说）：<br>1.若检测到总线空闲 96 比特时间，则发送这个帧<br>2.若检测到总线忙，则继续检测并等待总线转为空闲 96 比特时间，然后发送这个帧<br>96 比特时间 是指发送 96 比特所耗费的时间，也称为 帧间最小间隔。其作用是使接收方可以检测出一个帧的结束，同时也使得其他站点有机会平等竞争信道并发送帧</p>
+<p><strong>碰撞检测CD</strong></p>
+<p>每一个正在发送帧的站边发送边检测碰撞（边听边说）：</p>
+<ol>
+<li>一旦发现总线上出现碰撞，则立即停止发送，退避一段随机时间后再次发送</li>
+</ol>
+<p><strong>若在传输过程中，探测到别的节点也在传输，那么则检测到冲突。发生冲突后，节点立刻停止当前的传输，并且发送特定的干扰序列（JAM序列），用以加强该次冲突（用以保证其余所有节点都检测到该次冲突），在JAM序列发送完之后，节点随机选择一个时间倒数进行backoff。当backoff完成之后，节点可以尝试再次重传</strong>”。</p>
+<h2 id="冲突域"><a href="#冲突域" class="headerlink" title="冲突域"></a>冲突域</h2><p>冲突域是指连接在同一共享介质上的所有节点的集合，冲突域内所有节点竞争同一带宽，一个节点发出的报文(无论是单播、组播、广播)，其余节点都可以收到。</p>
+<h2 id="广播域"><a href="#广播域" class="headerlink" title="广播域"></a>广播域</h2><p>广播报文所能到达的整个访问范围称为二层广播域，简称广播域，同一广播域内的主机都能收到广播报文。</p>
+<h2 id="MAC地址"><a href="#MAC地址" class="headerlink" title="MAC地址"></a>MAC地址</h2><p>1.作用</p>
+<p>全球唯一标识网卡</p>
+<p>2.特点</p>
+<p>MAC地址是唯一的，MAC地址不可变，基于制造商进行MAC地址分配</p>
+<p>3.格式和表示方式</p>
+<p>48bit</p>
+<p>12位16进制 FF-FF-FF-FF-FF-FF</p>
+<p>或 48位二进制111111111111111111111111111111111111111111111111</p>
+<p>4.构成</p>
+<p>OUI 24位 制造商 24位</p>
+<p>5.分类</p>
+<p>单播(第二位为偶)，组播(第二位为奇)，广播(全F)</p>
+<h2 id="以太网帧类型"><a href="#以太网帧类型" class="headerlink" title="以太网帧类型"></a>以太网帧类型</h2><p>Ethernet_|| 格式</p>
+<p>IEEE 802.3格式<img src="/2023/10/12/Typora%20-%20%E5%89%AF%E6%9C%AC/%E7%AC%94%E8%AE%B0/00%E6%95%B0%E9%80%9A%E6%8A%80%E6%9C%AF%E5%9F%BA%E7%A1%80/6%20%E4%BB%A5%E5%A4%AA%E7%BD%91%E4%BA%A4%E6%8D%A2%E5%9F%BA%E7%A1%80%E9%87%8D%E7%82%B9/Users\胡桃\AppData\Roaming\Typora\typora-user-images\image-20230926200251101.png" srcset="/img/loading.gif" lazyload alt="image-20230926200251101"></p>
+<h2 id="园区网典型架构"><a href="#园区网典型架构" class="headerlink" title="园区网典型架构"></a>园区网典型架构</h2><p>出口区，核心区，汇聚层，接入层</p>
+<h2 id="交换机的工作原理-x2F-交换机的三种数据帧处理方式"><a href="#交换机的工作原理-x2F-交换机的三种数据帧处理方式" class="headerlink" title="交换机的工作原理&#x2F;交换机的三种数据帧处理方式"></a>交换机的工作原理&#x2F;交换机的三种数据帧处理方式</h2><p>在收到数据帧后，交换机学习帧的源MAC地址，然后在MAC地址表中查询该帧的目的MAC地址并将帧从对应的端口转发出去。</p>
+<p>泛洪：</p>
+<p>1.主机1发送数据帧，封装源MAC1，目的MAC2，交换机查询MAC表，接收到的是未知单播地址，则执行泛洪。</p>
+<p>2.主机1发送数据帧，封装源MAC1，目的FF-FF-FF-FF-FF-FF,交换机直接执行泛洪</p>
+<p>转发：</p>
+<p>主机1发送数据帧，封装源MAC1，目的MAC2，发送到交换机，如果收到的是单播帧，在MAC地址表中查到目的MAC并且不是进入交换机的端口，则执行转发</p>
+<p>丢弃：</p>
+<p>主机1发送数据帧，封装源MAC1，目的MAC2，发送到交换机，如果收到的是单播帧，但MAC地址表中查到目的MAC的端口是进入交换机的端口，则执行丢弃</p>
+<h2 id="交换机的MAC地址学习过程"><a href="#交换机的MAC地址学习过程" class="headerlink" title="交换机的MAC地址学习过程"></a>交换机的MAC地址学习过程</h2><p>自动配置和手动配置</p>
+<p>学习记录帧源的MAC地址和进入接口</p>
+<h2 id="ARP协议"><a href="#ARP协议" class="headerlink" title="ARP协议"></a>ARP协议</h2><p>主机1要给主机2发送数据帧，但查自己的ARP表，没有主机2的MAC，于是向主机2发送ARP请求报文，包含源MAC1，目的广播地址，源IP1和目的IP2，交换机学习帧的源IP和接口号记录在MAC表中，并泛洪，主机2收到数据帧之后，发现目的IP地址是自己，于是将主机1的MAC1和IP1记录在自己的ARP表中，并向主机1发送ARP响应报文，目的MAC地址MAC1的，源MAC地址是MAC2，源IP地址是IP2，目的IIP1，交换机学习帧的源IP和接口号记录在MAC表中，转发给主机1，主机1将主机2的MAC地址记录在自己的ARP表中</p>
+<h2 id="地址解析协议"><a href="#地址解析协议" class="headerlink" title="地址解析协议"></a>地址解析协议</h2><p>作用：通过IP获取对应的MAC地址</p>
 
                 
               </div>
@@ -292,8 +334,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>我的第一篇博客文章</div>
-      <div>https://sensenpro.github.io/2023/03/24/我的第一篇博客文章/</div>
+      <div></div>
+      <div>https://sensenpro.github.io/2023/10/12/Typora - 副本/笔记/00数通技术基础/6 以太网交换基础重点/</div>
     </div>
     <div class="license-meta">
       
@@ -305,7 +347,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2023年3月24日</div>
+          <div>2023年10月12日</div>
         </div>
       
       
@@ -337,7 +379,7 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2023/10/12/Typora%20-%20%E5%89%AF%E6%9C%AC/%E7%AC%94%E8%AE%B0/00%E6%95%B0%E9%80%9A%E6%8A%80%E6%9C%AF%E5%9F%BA%E7%A1%80/10%20%E7%BD%91%E7%BB%9C%E5%9C%B0%E5%9D%80%E8%BD%AC%E6%8D%A2/" title="">
+                      <a href="/2023/10/12/Typora%20-%20%E5%89%AF%E6%9C%AC/%E7%AC%94%E8%AE%B0/00%E6%95%B0%E9%80%9A%E6%8A%80%E6%9C%AF%E5%9F%BA%E7%A1%80/7%20VLAN%E5%8E%9F%E7%90%86%E4%B8%8E%E9%85%8D%E7%BD%AE/" title="">
                         <i class="iconfont icon-arrowleft"></i>
                         <span class="hidden-mobile"></span>
                         <span class="visible-mobile">上一篇</span>
@@ -347,8 +389,8 @@
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2023/03/23/hello-world/" title="Hello World">
-                        <span class="hidden-mobile">Hello World</span>
+                      <a href="/2023/10/12/Typora%20-%20%E5%89%AF%E6%9C%AC/%E7%AC%94%E8%AE%B0/00%E6%95%B0%E9%80%9A%E6%8A%80%E6%9C%AF%E5%9F%BA%E7%A1%80/10%20%E7%BD%91%E7%BB%9C%E5%9C%B0%E5%9D%80%E8%BD%AC%E6%8D%A2/" title="">
+                        <span class="hidden-mobile"></span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
